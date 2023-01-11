@@ -1,0 +1,31 @@
+[
+    {
+        "id" : "1",
+        "name" : "Defiant Black Red",
+        "img" : "http://manhh.dinus.ac.id/ecommerce/src/img/products/r1.jpg",
+        "desc" : "Defiant Black Red description",
+        "color" : "Red",
+        "price" : "$263",
+        "delprice" : "$389.99"
+    },
+
+    {
+        "id" : "2",
+        "name" : "Blue",
+        "img" : "http://manhh.dinus.ac.id/ecommerce/src/img/products/b1.jpg",
+        "desc" : "Blue description",
+        "color" : "Blue",
+        "price" : "$263",
+        "delprice" : "$349.95"
+    },
+
+    {
+        "id" : "3",
+        "name" : "White",
+        "img" : "http://manhh.dinus.ac.id/ecommerce/src/img/products/w1.jpg",
+        "desc" : "White description",
+        "color" : "White",
+        "price" : "$263",
+        "delprice" : "$300.95"
+    }
+]
