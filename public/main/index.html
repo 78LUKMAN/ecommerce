@@ -1,1917 +1,1726 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang=en>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Beats Store">
-    <meta name="author" content="Lukmanul Hakim">
-    <meta name="keywords" content="ecommers">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../../src/img/logo/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="../../src/img/logo/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../../src/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
-    <title>Beats Store</title>
+<meta charset=UTF-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta name=description content="Beats Store">
+<meta name=author content="Lukmanul Hakim">
+<meta name=keywords content=ecommers>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href=../../src/img/logo/favicon.ico type=image/x-icon>
+<link rel=icon href=../../src/img/logo/logo.png type=image/x-icon>
+<link rel=stylesheet href=../../src/css/style.css>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
+<title>Beats Store</title>
 </head>
-
 <body>
-
-    <div class="overlay" data-overlay></div>
-    <div class="modal" data-modal>
-        <div class="modal-close-overlay" data-modal-overlay></div>
-        <div class="modal-content">
-            <button class="modal-close-btn" data-modal-close>
-                <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="newsletter-img">
-                <img src="../../src/img/banner/newletter-img.png" alt="subscribe" width="300" height="300">
-            </div>
-            <div class="newsletter">
-                <form action="#">
-                    <div class="newsletter-header">
-                        <h3 class="newsletter-title">Subscribe</h3>
-                        <p class="newsletter-desc">Subscribe the <b>Beats Store</b> to get latest product and discount
-                            update</p>
-                    </div>
-
-                    <input type="email" name="email" class="email-field" id="" placeholder="type your email" required>
-                    <button type="submit" class="btn-newsletter">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="notification-toast" data-toast>
-        <button class="toast-close-btn" data-toast-close>
-            <ion-icon name="close-outline"></ion-icon>
-        </button>
-
-        <div class="toast-banner">
-            <img src="../../src/img/products/b1.jpg" alt="" width="80" height="70">
-        </div>
-
-        <div class="toast-detail">
-            <p class="toast-message">
-                Someone in new just bought
-            </p>
-            <p class="toast-title">
-                Beats's Product
-            </p>
-            <p class="toast-meta">
-                <time datetime="PT2M">2 Minutes</time> ago
-            </p>
-        </div>
-    </div>
-
-    <header>
-        <div class="header-top">
-            <div class="container">
-                <ul class="header-social-container">
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
-                <div class="header-alert-news">
-                    <p><b>Free Shipping</b>This Week Order Over - $250</p>
-                </div>
-
-                <div class="header-top-actions">
-                    <select name="currency">
-                        <option value="usd">USD &dollar;</option>
-                        <option value="usd">EUR &euro;</option>
-                    </select>
-
-                    <select name="language">
-                        <option value="es-US">English</option>
-                        <option value="es-ES">Espa&ntilde;ol</option>
-                        <option value="fr">Fran&ccedil;ais</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-
-        <div class="header-main">
-            <div class="container">
-                <a href="#" class="header-logo">
-                    <img src="../../src/img/logo/manlogo.PNG" alt="logo" width="80">
-                </a>
-                <div class="header-search-container">
-                    <input type="search" name="search" class="search-field" placeholder="search by product name">
-                    <button class="search-btn">
-                        <ion-icon name="search-outline"></ion-icon>
-                    </button>
-                </div>
-
-                <div class="header-user-actions">
-                    <button class="action-btn">
-                        <a href="../pages/signin.html">
-                            <ion-icon name="person-outline"></ion-icon>
-                        </a>
-                    </button>
-                    <button class="action-btn">
-                        <ion-icon name="heart-outline"></ion-icon>
-                        <span class="count">0</span>
-                    </button>
-                    <button class="action-btn">
-                        <ion-icon name="cart-outline"></ion-icon>
-                        <span class="count">0</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <nav class="desktop-nav-menu">
-            <div class="container">
-                <ul class="desktop-menu-category-list">
-                    <li class="menu-category">
-                        <a href="#" class="menu-title">Home</a>
-                    </li>
-                    <li class="menu-category">
-                        <a href="#" class="menu-title">Categories</a>
-                        <div class="dropdown-panel">
-
-                            <ul class="dropdown-panel-list">
-                                <li class="menu-title">
-                                    <a href="#">Headphone</a>
-                                </li>
-
-                                <li class="panel-list-item">
-                                    <a href="#">Product-1</a>
-                                </li>
-                                <li class="panel-list-item">
-                                    <a href="#">Product-2</a>
-                                </li>
-                                <li class="panel-list-item">
-                                    <a href="#">Product-3</a>
-                                </li>
-                                <li class="panel-list-item">
-                                    <a href="#">Product-4</a>
-                                </li>
-                                <li class="panel-list-item">
-                                    <a href="#">
-                                        <img src="../../src/img/banner/banner-2-headphone.png" alt="Headphone Collection"
-                                            width="250" height="119">
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <ul class="dropdown-panel-list">
-                                <li class="menu-title">
-                                    <a href="#">Smartphone</a>
-                                </li>
-
-                                <li class="panel-list-item">
-                                    <a href="#">Product-A</a>
-                                </li>
-                                <li class="panel-list-item">
-                                    <a href="#">Product-B</a>
-                                </li>
-                                <li class="panel-list-item">
-                                    <a href="#">Product-C</a>
-                                </li>
-                                <li class="panel-list-item">
-                                    <a href="#">Product-D</a>
-                                </li>
-                                <li class="panel-list-item">
-                                    <a href="#">
-                                        <img src="../../src/img/banner/banner-2-handphone.png" alt="Headphone Collection"
-                                            width="250" height="119">
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <ul class="dropdown-panel-list">
-                                <li class="menu-title">
-                                    <a href="#">Watch</a>
-                                </li>
-
-                                <li class="panel-list-item">
-                                    <a href="#">Product-1</a>
-                                </li>
-                                <li class="panel-list-item">
-                                    <a href="#">Product-2</a>
-                                </li>
-                                <li class="panel-list-item">
-                                    <a href="#">Product-3</a>
-                                </li>
-                                <li class="panel-list-item">
-                                    <a href="#">Product-4</a>
-                                </li>
-                                <li class="panel-list-item">
-                                    <a href="#">
-                                        <img src="../../src/img/banner/banner-2-watch.png" alt="Headphone Collection"
-                                            width="250" height="119">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="mobile-bottom-nav">
-            <button class="action-btn" data-mobile-menu-open-btn>
-                <ion-icon name="menu-outline"></ion-icon>
-            </button>
-
-            <button class="action-btn">
-                <ion-icon name="cart-outline"></ion-icon>
-                <span class="count">0</span>
-            </button>
-
-            <button class="action-btn">
-                <ion-icon name="home-outline"></ion-icon>
-            </button>
-
-            <button class="action-btn">
-                <ion-icon name="heart-outline"></ion-icon>
-                <span class="count">0</span>
-            </button>
-
-            <button class="action-btn" data-mobile-menu-open-btn>
-                <ion-icon name="grid-outline"></ion-icon>
-            </button>
-        </div>
-
-        <nav class="mobile-nav-menu has-scrollbar" data-mobile-menu>
-            <div class="menu-top">
-                <h2 class="menu-title">Menu</h2>
-
-                <button class="menu-close-btn" data-mobile-menu-close-btn>
-                    <ion-icon name="close-outline"></ion-icon>
-                </button>
-            </div>
-
-            <ul class="mobile-menu-category-list">
-                <li class="menu-category">
-                    <a href="#" class="menu-title">Home</a>
-                </li>
-                <li class="menu-category">
-                    <button class="accordion-menu" data-accordion-btn>
-                        <p class="menu-title">Headphone</p>
-
-                        <div>
-                            <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                            <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                        </div>
-                    </button>
-
-                    <ul class="submenu-category-list" data-accordion>
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">product-A</a>
-                        </li>
-
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">product-B</a>
-                        </li>
-
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">product-C</a>
-                        </li>
-
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">product-D</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-category">
-                    <button class="accordion-menu" data-accordion-btn>
-                        <p class="menu-title">Watch</p>
-
-                        <div>
-                            <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                            <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                        </div>
-                    </button>
-
-                    <ul class="submenu-category-list" data-accordion>
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">product-A</a>
-                        </li>
-
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">product-B</a>
-                        </li>
-
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">product-C</a>
-                        </li>
-
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">product-D</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-category">
-                    <button class="accordion-menu" data-accordion-btn>
-                        <p class="menu-title">Smartphone</p>
-
-                        <div>
-                            <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                            <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                        </div>
-                    </button>
-
-                    <ul class="submenu-category-list" data-accordion>
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">product-A</a>
-                        </li>
-
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">product-B</a>
-                        </li>
-
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">product-C</a>
-                        </li>
-
-                        <li class="submenu-category">
-                            <a href="#" class="submenu-title">product-D</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-category">
-                    <a href="#" class="menu-title">Blog</a>
-                </li>
-                <li class="menu-category">
-                    <a href="#" class="menu-title">Hot Offers</a>
-                </li>
-                <li class="menu-category">
-                    <a href="../pages/signin.html" class="menu-title">Login</a>
-                </li>
-            </ul>
-            <div class="menu-bottom">
-                <ul class="menu-category-list">
-                    <li class="menu-category">
-                        <button class="accordion-menu" data-accordion-btn>
-                            <p class="menu-title">Currency</p>
-                            <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
-                        </button>
-
-                        <ul class="submenu-category-list" data-accordion>
-                            <li class="submenu-category">
-                                <a href="#" class="submenu-title">USD &dollar;</a>
-                            </li>
-                            <li class="submenu-category">
-                                <a href="#" class="submenu-title">EUR &euro;</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-category">
-                        <button class="accordion-menu" data-accordion-btn>
-                            <p class="menu-title">Language</p>
-                            <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
-                        </button>
-
-                        <ul class="submenu-category-list" data-accordion>
-                            <li class="submenu-category">
-                                <a href="#" class="submenu-title">English</a>
-                            </li>
-                            <li class="submenu-category">
-                                <a href="#" class="submenu-title">Espa&ntilde;ol</a>
-                            </li>
-                            <li class="submenu-category">
-                                <a href="#" class="submenu-title">Fren&ccedil;h</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul class="menu-social-container">
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <div class="banner">
-            <div class="container">
-                <div class="slider-container has-scrollbar">
-                    <div class="slider-item">
-                        <img src="../../src/img/banner/banner-jam.png" alt="" class="banner-img">
-
-                        <div class="banner-content">
-                            <p class="banner-subtitle">Trending Item</p>
-
-                            <h2 class="banner-title">Tranding Item</h2>
-
-                            <p class="banner-text">
-                                starting at $ <b>332</b>.80
-                            </p>
-                            <a href="#" class="banner-btn">Shop Now</a>
-
-                        </div>
-                    </div>
-
-                    <div class="slider-item">
-                        <img src="../../src/img/banner/banner-handphone.png" alt="" class="banner-img">
-
-                        <div class="banner-content">
-                            <p class="banner-subtitle">Trending Item</p>
-
-                            <h2 class="banner-title">Limited Edition</h2>
-
-                            <p class="banner-text">
-                                starting at $ <b>928</b>.00
-                            </p>
-                            <a href="#" class="banner-btn">Shop Now</a>
-
-                        </div>
-                    </div>
-
-                    <div class="slider-item">
-                        <img src="../../src/img/banner/banner-headphone.png" alt="" class="banner-img">
-
-                        <div class="banner-content">
-                            <p class="banner-subtitle">Trending Item</p>
-
-                            <h2 class="banner-title">Special Offer</h2>
-
-                            <p class="banner-text">
-                                starting at $ <b>249</b>.60
-                            </p>
-                            <a href="#" class="banner-btn">Shop Now</a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="category">
-            <div class="container">
-                <div class="category-item-container has-scrollbar">
-                    <div class="category-item">
-                        <div class="category-img-box">
-                            <img src="../../src/img/logo/handphone.jpg" alt="" width="30">
-                        </div>
-
-                        <div class="category-content-box">
-                            <div class="category-content-flex">
-                                <h3 class="category-item-title">watch</h3>
-                                <p class="category-item-amount">(23)</p>
-                            </div>
-                            <a href="#" class="category-btn">Show All</a>
-                        </div>
-                    </div>
-
-                    <div class="category-item">
-                        <div class="category-img-box">
-                            <img src="../../src/img/logo/headphone.jpg" alt="" height="32" width="35">
-                        </div>
-
-                        <div class="category-content-box">
-                            <div class="category-content-flex">
-                                <h3 class="category-item-title">watch</h3>
-                                <p class="category-item-amount">(23)</p>
-                            </div>
-                            <a href="#" class="category-btn">Show All</a>
-                        </div>
-                    </div>
-
-                    <div class="category-item">
-                        <div class="category-img-box">
-                            <img src="../../src/img/logo/watch.jpg" alt="" width="30">
-                        </div>
-
-                        <div class="category-content-box">
-                            <div class="category-content-flex">
-                                <h3 class="category-item-title">watch</h3>
-                                <p class="category-item-amount">(23)</p>
-                            </div>
-                            <a href="#" class="category-btn">Show All</a>
-                        </div>
-                    </div>
-
-                    <div class="category-item">
-                        <div class="category-img-box">
-                            <img src="../../src/img/logo/headphone.jpg" alt="" height="32" width="35">
-                        </div>
-
-                        <div class="category-content-box">
-                            <div class="category-content-flex">
-                                <h3 class="category-item-title">watch</h3>
-                                <p class="category-item-amount">(23)</p>
-                            </div>
-                            <a href="#" class="category-btn">Show All</a>
-                        </div>
-                    </div>
-
-                    <div class="category-item">
-                        <div class="category-img-box">
-                            <img src="../../src/img/logo/handphone.jpg" alt="" width="30">
-                        </div>
-
-                        <div class="category-content-box">
-                            <div class="category-content-flex">
-                                <h3 class="category-item-title">watch</h3>
-                                <p class="category-item-amount">(23)</p>
-                            </div>
-                            <a href="#" class="category-btn">Show All</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="product-container">
-            <div class="container">
-
-                <div class="slidebar has-scrollbar" data-mobile-menu>
-                    <div class="slidebar-category">
-                        <div class="slidebar-top">
-                            <h2 class="slidebar-title">Category</h2>
-
-                            <button class="slidebar-close-btn" data-mobile-menu-close-btn>
-                                <ion-icon name="close-outline"></ion-icon>
-                            </button>
-                        </div>
-
-                        <ul class="slidebar-menu-category-list">
-                            <li class="slidebar-menu-category">
-                                <button class="slidebar-accordion-menu" data-accordion-btn>
-                                    <div class="menu-title-flex">
-                                        <img src="../../src/img/logo/handphone.jpg" alt="" width="20"
-                                            class="menu-title-img">
-                                        <p class="menu-title">Handphone</p>
-                                    </div>
-
-                                    <div>
-                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                                    </div>
-                                </button>
-
-                                <ul class="slidebar-submenu-category-list" data-accordion>
-                                    <li class="slidebar-submenu-category">
-                                        <a href="#" class="slidebar-submenu-title">
-                                            <p class="product-name">Samsung</p>
-                                            <data value="300" class="stock" title="available stock">58</data>
-                                        </a>
-                                    </li>
-
-                                    <li class="slidebar-submenu-category">
-                                        <a href="#" class="slidebar-submenu-title">
-                                            <p class="product-name">Apple</p>
-                                            <data value="300" class="stock" title="available stock">32</data>
-                                        </a>
-                                    </li>
-
-                                    <li class="slidebar-submenu-category">
-                                        <a href="#" class="slidebar-submenu-title">
-                                            <p class="product-name">Asus</p>
-                                            <data value="300" class="stock" title="available stock">60</data>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="slidebar-menu-category">
-                                <button class="slidebar-accordion-menu" data-accordion-btn>
-                                    <div class="menu-title-flex">
-                                        <img src="../../src/img/logo/headphone.jpg" alt="" width="20" height="22"
-                                            class="menu-title-img">
-                                        <p class="menu-title">Headphone</p>
-                                    </div>
-
-                                    <div>
-                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                                    </div>
-                                </button>
-
-                                <ul class="slidebar-submenu-category-list" data-accordion>
-                                    <li class="slidebar-submenu-category">
-                                        <a href="#" class="slidebar-submenu-title">
-                                            <p class="product-name">Beats</p>
-                                            <data value="300" class="stock" title="available stock">120</data>
-                                        </a>
-                                    </li>
-
-                                    <li class="slidebar-submenu-category">
-                                        <a href="#" class="slidebar-submenu-title">
-                                            <p class="product-name">Sony</p>
-                                            <data value="300" class="stock" title="available stock">200</data>
-                                        </a>
-                                    </li>
-
-                                    <li class="slidebar-submenu-category">
-                                        <a href="#" class="slidebar-submenu-title">
-                                            <p class="product-name">Razer</p>
-                                            <data value="300" class="stock" title="available stock">150</data>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="slidebar-menu-category">
-                                <button class="slidebar-accordion-menu" data-accordion-btn>
-                                    <div class="menu-title-flex">
-                                        <img src="../../src/img/logo/watch.jpg" alt="" width="20"
-                                            class="menu-title-img">
-                                        <p class="menu-title">Watch</p>
-                                    </div>
-
-                                    <div>
-                                        <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                                        <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                                    </div>
-                                </button>
-
-                                <ul class="slidebar-submenu-category-list" data-accordion>
-                                    <li class="slidebar-submenu-category">
-                                        <a href="#" class="slidebar-submenu-title">
-                                            <p class="product-name">Casio</p>
-                                            <data value="300" class="stock" title="available stock">80</data>
-                                        </a>
-                                    </li>
-
-                                    <li class="slidebar-submenu-category">
-                                        <a href="#" class="slidebar-submenu-title">
-                                            <p class="product-name">Fossil</p>
-                                            <data value="300" class="stock" title="available stock">96</data>
-                                        </a>
-                                    </li>
-
-                                    <li class="slidebar-submenu-category">
-                                        <a href="#" class="slidebar-submenu-title">
-                                            <p class="product-name">Orient</p>
-                                            <data value="300" class="stock" title="available stock">84</data>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                    <div class="product-showcase">
-                        <h3 class="showcase-heading">Best Seller</h3>
-                        <div class="showcase-wrapper">
-                            <div class="showcase-container">
-                                <div class="showcase">
-                                    <a href="#" class="showcase-img-box">
-                                        <img src="../../src/img/products/product1.png" alt="" class="showcase-img" width="75">
-                                    </a>
-                                    <div class="showcase-content">
-                                        <a href="#">
-                                            <h4 class="showcase-title">Product-1</h4>
-                                        </a>
-
-                                        <div class="showcase-rating">
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                        </div>
-
-                                        <div class="price-box">
-                                            <del>&dollar;360.70</del>
-                                            <p class="price">&dollar;246.00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="showcase">
-                                    <a href="#" class="showcase-img-box">
-                                        <img src="../../src/img/products/product2.png" alt="" class="showcase-img" width="75">
-                                    </a>
-                                    <div class="showcase-content">
-                                        <a href="#">
-                                            <h4 class="showcase-title">Product-2</h4>
-                                        </a>
-
-                                        <div class="showcase-rating">
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                        </div>
-
-                                        <div class="price-box">
-                                            <del>&dollar;379.70</del>
-                                            <p class="price">&dollar;200.15</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="showcase">
-                                    <a href="#" class="showcase-img-box">
-                                        <img src="../../src/img/products/product3.png" alt="" class="showcase-img" width="75">
-                                    </a>
-                                    <div class="showcase-content">
-                                        <a href="#">
-                                            <h4 class="showcase-title">Product-3</h4>
-                                        </a>
-
-                                        <div class="showcase-rating">
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                        </div>
-
-                                        <div class="price-box">
-                                            <del>&dollar;360.99</del>
-                                            <p class="price">&dollar;206.20</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-box">
-                    <div class="product-minimal">
-                        <div class="product-showcase">
-                            <h2 class="title">New Products</h2>
-                            <div class="showcase-wrapper has-scrollbar">
-                                <div class="showcase-container">
-                                    <div class="showcase">
-                                        <a href="#" class="showcase-img-box">
-                                            <img src="../../src/img/products/product1.png" alt="" width="70"
-                                                class="showcase-img">
-                                        </a>
-                                        <div class="showcase-content">
-                                            <a href="#">
-                                                <h4 class="showcase-title">Matte Black</h4>
-                                            </a>
-                                            <a href="#" class="showcase-category">Headphone</a>
-                                            <div class="price-box">
-                                                <p class="price">$200.29</p>
-                                                <del>$330.95</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="showcase">
-                                        <a href="#" class="showcase-img-box">
-                                            <img src="../../src/img/products/product2.png" alt="" width="70"
-                                                class="showcase-img">
-                                        </a>
-                                        <div class="showcase-content">
-                                            <a href="#">
-                                                <h4 class="showcase-title">Defiant Black Red</h4>
-                                            </a>
-                                            <a href="#" class="showcase-category">Headphone</a>
-                                            <div class="price-box">
-                                                <p class="price">$283.99</p>
-                                                <del>$389.99</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="showcase">
-                                        <a href="#" class="showcase-img-box">
-                                            <img src="../../src/img/products/product3.png" alt="" width="70"
-                                                class="showcase-img">
-                                        </a>
-                                        <div class="showcase-content">
-                                            <a href="#">
-                                                <h4 class="showcase-title">Midnight Black</h4>
-                                            </a>
-                                            <a href="#" class="showcase-category">Headphone</a>
-                                            <div class="price-box">
-                                                <p class="price">$263.99</p>
-                                                <del>$349.95</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="showcase">
-                                        <a href="#" class="showcase-img-box">
-                                            <img src="../../src/img/products/product4.png" alt="" width="70"
-                                                class="showcase-img">
-                                        </a>
-                                        <div class="showcase-content">
-                                            <a href="#">
-                                                <h4 class="showcase-title">Blue</h4>
-                                            </a>
-                                            <a href="#" class="showcase-category">Headphone</a>
-                                            <div class="price-box">
-                                                <p class="price">$263.99</p>
-                                                <del>$349.95</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="showcase-container">
-                                    <div class="showcase">
-                                        <a href="#" class="showcase-img-box">
-                                            <img src="../../src/img/products/product2.png" alt="" width="70"
-                                                class="showcase-img">
-                                        </a>
-                                        <div class="showcase-content">
-                                            <a href="#">
-                                                <h4 class="showcase-title">Defiant Black Red</h4>
-                                            </a>
-                                            <a href="#" class="showcase-category">Headphone</a>
-                                            <div class="price-box">
-                                                <p class="price">$263.99</p>
-                                                <del>$349.95</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="showcase">
-                                        <a href="#" class="showcase-img-box">
-                                            <img src="../../src/img/products/product5.png" alt="" width="70"
-                                                class="showcase-img">
-                                        </a>
-                                        <div class="showcase-content">
-                                            <a href="#">
-                                                <h4 class="showcase-title">Shadow Gray</h4>
-                                            </a>
-                                            <a href="#" class="showcase-category">Headphone</a>
-                                            <div class="price-box">
-                                                <p class="price">$263.99</p>
-                                                <del>$349.95</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="showcase">
-                                        <a href="#" class="showcase-img-box">
-                                            <img src="../../src/img/products/product3.png" alt="" width="70"
-                                                class="showcase-img">
-                                        </a>
-                                        <div class="showcase-content">
-                                            <a href="#">
-                                                <h4 class="showcase-title">Midnight Black</h4>
-                                            </a>
-                                            <a href="#" class="showcase-category">Headphone</a>
-                                            <div class="price-box">
-                                                <p class="price">$263.99</p>
-                                                <del>$349.95</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="showcase">
-                                        <a href="#" class="showcase-img-box">
-                                            <img src="../../src/img/products/product4.png" alt="" width="70"
-                                                class="showcase-img">
-                                        </a>
-                                        <div class="showcase-content">
-                                            <a href="#">
-                                                <h4 class="showcase-title">Blue</h4>
-                                            </a>
-                                            <a href="#" class="showcase-category">Headphone</a>
-                                            <div class="price-box">
-                                                <p class="price">$263.99</p>
-                                                <del>$349.95</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-showcase">
-                            <h2 class="title">New Products</h2>
-                            <div class="showcase-wrapper has-scrollbar">
-                                <div class="showcase-container">
-                                    <div class="showcase">
-                                        <a href="#" class="showcase-img-box">
-                                            <img src="../../src/img/products/product1.png" alt="" width="70"
-                                                class="showcase-img">
-                                        </a>
-                                        <div class="showcase-content">
-                                            <a href="#">
-                                                <h4 class="showcase-title">Matte Black</h4>
-                                            </a>
-                                            <a href="#" class="showcase-category">Headphone</a>
-                                            <div class="price-box">
-                                                <p class="price">$263.99</p>
-                                                <del>$349.95</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="showcase">
-                                        <a href="#" class="showcase-img-box">
-                                            <img src="../../src/img/products/product2.png" alt="" width="70"
-                                                class="showcase-img">
-                                        </a>
-                                        <div class="showcase-content">
-                                            <a href="#">
-                                                <h4 class="showcase-title">Defiant Black Red</h4>
-                                            </a>
-                                            <a href="#" class="showcase-category">Headphone</a>
-                                            <div class="price-box">
-                                                <p class="price">$263.99</p>
-                                                <del>$349.95</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="showcase">
-                                        <a href="#" class="showcase-img-box">
-                                            <img src="../../src/img/products/product3.png" alt="" width="70"
-                                                class="showcase-img">
-                                        </a>
-                                        <div class="showcase-content">
-                                            <a href="#">
-                                                <h4 class="showcase-title">Midnight Black</h4>
-                                            </a>
-                                            <a href="#" class="showcase-category">Headphone</a>
-                                            <div class="price-box">
-                                                <p class="price">$263.99</p>
-                                                <del>$349.95</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="showcase">
-                                        <a href="#" class="showcase-img-box">
-                                            <img src="../../src/img/products/product4.png" alt="" width="70"
-                                                class="showcase-img">
-                                        </a>
-                                        <div class="showcase-content">
-                                            <a href="#">
-                                                <h4 class="showcase-title">Blue</h4>
-                                            </a>
-                                            <a href="#" class="showcase-category">Headphone</a>
-                                            <div class="price-box">
-                                                <p class="price">$263.99</p>
-                                                <del>$349.95</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="showcase-container">
-                                    <div class="showcase">
-                                        <a href="#" class="showcase-img-box">
-                                            <img src="../../src/img/products/product2.png" alt="" width="70"
-                                                class="showcase-img">
-                                        </a>
-                                        <div class="showcase-content">
-                                            <a href="#">
-                                                <h4 class="showcase-title">Defiant Black Red</h4>
-                                            </a>
-                                            <a href="#" class="showcase-category">Headphone</a>
-                                            <div class="price-box">
-                                                <p class="price">$263.99</p>
-                                                <del>$349.95</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="showcase">
-                                        <a href="#" class="showcase-img-box">
-                                            <img src="../../src/img/products/product5.png" alt="" width="70"
-                                                class="showcase-img">
-                                        </a>
-                                        <div class="showcase-content">
-                                            <a href="#">
-                                                <h4 class="showcase-title">Shadow Gray</h4>
-                                            </a>
-                                            <a href="#" class="showcase-category">Headphone</a>
-                                            <div class="price-box">
-                                                <p class="price">$263.99</p>
-                                                <del>$349.95</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="showcase">
-                                        <a href="#" class="showcase-img-box">
-                                            <img src="../../src/img/products/product3.png" alt="" width="70"
-                                                class="showcase-img">
-                                        </a>
-                                        <div class="showcase-content">
-                                            <a href="#">
-                                                <h4 class="showcase-title">Midnight Black</h4>
-                                            </a>
-                                            <a href="#" class="showcase-category">Headphone</a>
-                                            <div class="price-box">
-                                                <p class="price">$263.99</p>
-                                                <del>$349.95</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="showcase">
-                                        <a href="#" class="showcase-img-box">
-                                            <img src="../../src/img/products/product4.png" alt="" width="70"
-                                                class="showcase-img">
-                                        </a>
-                                        <div class="showcase-content">
-                                            <a href="#">
-                                                <h4 class="showcase-title">Blue</h4>
-                                            </a>
-                                            <a href="#" class="showcase-category">Headphone</a>
-                                            <div class="price-box">
-                                                <p class="price">$263.99</p>
-                                                <del>$349.95</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-featured">
-                        <h2 class="title">Limited Offer</h2>
-                        <div class="showcase-wrapper has-scrollbar">
-                            <div class="showcase-container">
-                                <div class="showcase">
-                                    <div class="showcase-banner">
-                                        <img src="../../src/img/products/r1.jpg" alt="" class="showcase-img">
-                                    </div>
-                                    <div class="showcase-content">
-                                        <div class="showcase-rating">
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                        </div>
-                                        <a href="#">
-                                            <h3 class="showcase-title">Beats Studio<sup>3</sup> Wireless Noise
-                                                Cancelling</h3>
-                                        </a>
-
-                                        <p class="showcase-desc">
-                                            Beats Studio 3 wireless over-ear headphones delivers premium sound while
-                                            blocking external naoise with active noise calcelling.
-                                        </p>
-
-                                        <div class="price-box">
-                                            <p class="price">$263</p>
-                                            <del>$389.99</del>
-                                        </div>
-
-                                        <button class="details-btn">details</button>
-                                        <div class="showcase-status">
-                                            <div class="wrapper">
-                                                <p>Sold : <b><i>35</i></b></p>
-                                                <p>Stock : <b><i>10</i></b></p>
-                                            </div>
-
-                                            <div class="showcase-status-bar"></div>
-                                        </div>
-                                        <div class="countdown-box">
-                                            <p class="countdown-desc">
-                                                Only 10 left in stock - order soon.
-                                            </p>
-
-                                            <div class="countdown">
-                                                <div class="countdown-content">
-                                                    <p class="display-number">5</p>
-                                                    <p class="display-text">days</p>
-                                                </div>
-                                                <div class="countdown-content">
-                                                    <p class="display-number">10</p>
-                                                    <p class="display-text">hours</p>
-                                                </div>
-                                                <div class="countdown-content">
-                                                    <p class="display-number">26</p>
-                                                    <p class="display-text">min</p>
-                                                </div>
-                                                <div class="countdown-content">
-                                                    <p class="display-number">45</p>
-                                                    <p class="display-text">sec</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="showcase-container">
-                                <div class="showcase">
-                                    <div class="showcase-banner">
-                                        <img src="../../src/img/products/b1.jpg" alt="" class="showcase-img">
-                                    </div>
-                                    <div class="showcase-content">
-                                        <div class="showcase-rating">
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                        </div>
-                                        <a href="#">
-                                            <h3 class="showcase-title">Beats Studio<sup>3</sup> Wireless Noise
-                                                Cancelling</h3>
-                                        </a>
-
-                                        <p class="showcase-desc">
-                                            Beats Studio 3 wireless over-ear headphones delivers premium sound while
-                                            blocking external naoise with active noise calcelling.
-                                        </p>
-
-                                        <div class="price-box">
-                                            <p class="price">$263</p>
-                                            <del>$349.95</del>
-                                        </div>
-
-                                        <button class="details-btn">details</button>
-                                        <div class="showcase-status">
-                                            <div class="wrapper">
-                                                <p>Sold : <b><i>35</i></b></p>
-                                                <p>Stock : <b><i>10</i></b></p>
-                                            </div>
-
-                                            <div class="showcase-status-bar"></div>
-                                        </div>
-                                        <div class="countdown-box">
-                                            <p class="countdown-desc">
-                                                Only 10 left in stock - order soon.
-                                            </p>
-
-                                            <div class="countdown">
-                                                <div class="countdown-content">
-                                                    <p class="display-number">3</p>
-                                                    <p class="display-text">days</p>
-                                                </div>
-                                                <div class="countdown-content">
-                                                    <p class="display-number">1</p>
-                                                    <p class="display-text">hours</p>
-                                                </div>
-                                                <div class="countdown-content">
-                                                    <p class="display-number">12</p>
-                                                    <p class="display-text">min</p>
-                                                </div>
-                                                <div class="countdown-content">
-                                                    <p class="display-number">5</p>
-                                                    <p class="display-text">sec</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="showcase-container">
-                                <div class="showcase">
-                                    <div class="showcase-banner">
-                                        <img src="../../src/img/products/w1.jpg" alt="" class="showcase-img">
-                                    </div>
-                                    <div class="showcase-content">
-                                        <div class="showcase-rating">
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                        </div>
-                                        <a href="#">
-                                            <h3 class="showcase-title">Beats Studio<sup>3</sup> Wireless Noise
-                                                Cancelling</h3>
-                                        </a>
-
-                                        <p class="showcase-desc">
-                                            Beats Studio 3 wireless over-ear headphones delivers premium sound while
-                                            blocking external naoise with active noise calcelling.
-                                        </p>
-
-                                        <div class="price-box">
-                                            <p class="price">$263</p>
-                                            <del>$300.95</del>
-                                        </div>
-
-                                        <button class="details-btn">details</button>
-                                        <div class="showcase-status">
-                                            <div class="wrapper">
-                                                <p>Sold : <b><i>35</i></b></p>
-                                                <p>Stock : <b><i>10</i></b></p>
-                                            </div>
-
-                                            <div class="showcase-status-bar"></div>
-                                        </div>
-                                        <div class="countdown-box">
-                                            <p class="countdown-desc">
-                                                Only 10 left in stock - order soon.
-                                            </p>
-
-                                            <div class="countdown">
-                                                <div class="countdown-content">
-                                                    <p class="display-number">4</p>
-                                                    <p class="display-text">days</p>
-                                                </div>
-                                                <div class="countdown-content">
-                                                    <p class="display-number">4</p>
-                                                    <p class="display-text">hours</p>
-                                                </div>
-                                                <div class="countdown-content">
-                                                    <p class="display-number">6</p>
-                                                    <p class="display-text">min</p>
-                                                </div>
-                                                <div class="countdown-content">
-                                                    <p class="display-number">15</p>
-                                                    <p class="display-text">sec</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="display-details has-scrollbar">
-                            <div class="product-details-content">
-                                <button class="modal-close-btn" details-popup-close>
-                                    <ion-icon name="close-outline"></ion-icon>
-                                </button>
-                                <div class="product-content">
-                                    <div>
-                                        <img width="200" class="detail-product-img" alt="">
-                                        <div class="detail-btn-actions">
-                                            <div class="item-btn">Add to Cart</div>
-                                            <div class="item-btn">Favorite</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-desc has-scrollbar">
-
-                                        <div class="product-title"></div>
-                                        <p class="item-desc">Beats Studio 3 wireless over-ear headphones delivers
-                                            premium sound while
-                                            blocking external naoise with active noise calcelling.</p>
-                                        <h3>Price</h3>
-                                        <div class="price-box">
-                                            <p class="price price-now"></p>
-                                            <del class="del-price"></del>
-                                        </div>
-                                        <h3>Rating</h3>
-                                        <div class="showcase-rating">
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                        </div>
-
-
-                                        <table>
-                                            <tr>
-                                                <td>Brand</td>
-                                                <td>Beats</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Model Name</td>
-                                                <td>Beats Studio<sup>3</sup></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Color</td>
-                                                <td id="item-color"></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Form Factor</td>
-                                                <td>Over Ear</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Connectivity</td>
-                                                <td>Wireless, Wires, NFC</td>
-                                            </tr>
-                                        </table>
-
-                                        <div class="desc-title">About this item :</div>
-                                        <div class="desc-content">
-                                            <ul>
-                                                <li>High-performance wireless noise cancelling headphones</li>
-                                                <li>Compatible with iOS and Android devices.</li>
-                                                <li>Pure adaptive noise canceling (pure ANC) actively blocks external
-                                                    noise
-                                                </li>
-                                                <li>Real-time Audio calibration preserves a Premium listening experience
-                                                </li>
-                                                <li>Up to 22 hours of battery life enables full-featured all-day
-                                                    wireless
-                                                    playback</li>
-                                                <li>Apple's W1 chip and industry-leading Bluetooth technology keep you
-                                                    connected farther with fewer drop-outs</li>
-                                                <li>With fast Fuel, a 10-minute charge gives 3 hours of play when
-                                                    battery is
-                                                    low. Rechargeable lithium ion battery</li>
-                                                <li>Take calls, control your music, and activate Siri with the
-                                                    multifunction
-                                                    on-ear controls and microphone</li>
-                                                <li>What's in the box: Beats Studio3 Wireless headphones, Carrying case,
-                                                    3.5mm RemoteTalk cable, Universal USB charging cable, Quick Start
-                                                    Guide,
-                                                    Warranty Card</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="product-main">
-                        <h2 class="title">January Special Price</h2>
-                        <div class="product-grid-container">
-                            <div class="showcase">
-                                <div class="showcase-banner">
-                                    <img src="../../src/img/products/product4.png" alt="" width="100"
-                                        class="product-img default">
-                                    <img src="../../src/img/products/product3.png" alt="" width="100" class="product-img hover">
-
-                                    <p class="showcase-bagde angle r-blue">25%</p>
-                                    <div class="showcase-actions">
-                                        <button class="btn-action">
-                                            <ion-icon name="heart-outline"></ion-icon>
-                                        </button>
-                                        <button class="btn-action">
-                                            <ion-icon name="eye-outline"></ion-icon>
-                                        </button>
-                                        <button class="btn-action">
-                                            <ion-icon name="repeat-outline"></ion-icon>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="showcase-content">
-                                    <a href="#" class="showcase-category">Headphone</a>
-                                    <a href="#">
-                                        <h3 class="showcase-title">Beats Studio<sup>3</sup></h3>
-                                    </a>
-
-                                    <div class="showcase-rating">
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                    </div>
-
-                                    <div class="price-box">
-                                        <p class="price">$262.46</p>
-                                        <del>$349.95</del>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="showcase">
-                                <div class="showcase-banner">
-                                    <img src="../../src/img/products/product1.png" alt="" width="300"
-                                        class="product-img default">
-                                    <img src="../../src/img/products/product2.png" alt="" width="300" class="product-img hover">
-
-                                    <p class="showcase-bagde">31%</p>
-                                    <div class="showcase-actions">
-                                        <button class="btn-action">
-                                            <ion-icon name="heart-outline"></ion-icon>
-                                        </button>
-                                        <button class="btn-action">
-                                            <ion-icon name="eye-outline"></ion-icon>
-                                        </button>
-                                        <button class="btn-action">
-                                            <ion-icon name="repeat-outline"></ion-icon>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="showcase-content">
-                                    <a href="#" class="showcase-category">Headphone</a>
-                                    <a href="#">
-                                        <h3 class="showcase-title">Beats Studio<sup>3</sup></h3>
-                                    </a>
-
-                                    <div class="showcase-rating">
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                    </div>
-
-                                    <div class="price-box">
-                                        <p class="price">$241.47</p>
-                                        <del>$349.95</del>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="showcase">
-                                <div class="showcase-banner">
-                                    <img src="../../src/img/products/product4.png" alt="" width="300"
-                                        class="product-img default">
-                                    <img src="../../src/img/products/product3.png" alt="" width="300" class="product-img hover">
-
-                                    <p class="showcase-bagde angle r-blue">25%</p>
-                                    <div class="showcase-actions">
-                                        <button class="btn-action">
-                                            <ion-icon name="heart-outline"></ion-icon>
-                                        </button>
-                                        <button class="btn-action">
-                                            <ion-icon name="eye-outline"></ion-icon>
-                                        </button>
-                                        <button class="btn-action">
-                                            <ion-icon name="repeat-outline"></ion-icon>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="showcase-content">
-                                    <a href="#" class="showcase-category">Headphone</a>
-                                    <a href="#">
-                                        <h3 class="showcase-title">Beats Studio<sup>3</sup></h3>
-                                    </a>
-
-                                    <div class="showcase-rating">
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                    </div>
-
-                                    <div class="price-box">
-                                        <p class="price">$262.46</p>
-                                        <del>$349.95</del>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="showcase">
-                                <div class="showcase-banner">
-                                    <img src="../../src/img/products/product1.png" alt="" width="300"
-                                        class="product-img default">
-                                    <img src="../../src/img/products/product2.png" alt="" width="300" class="product-img hover">
-
-                                    <p class="showcase-bagde">31%</p>
-                                    <div class="showcase-actions">
-                                        <button class="btn-action">
-                                            <ion-icon name="heart-outline"></ion-icon>
-                                        </button>
-                                        <button class="btn-action">
-                                            <ion-icon name="eye-outline"></ion-icon>
-                                        </button>
-                                        <button class="btn-action">
-                                            <ion-icon name="repeat-outline"></ion-icon>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="showcase-content">
-                                    <a href="#" class="showcase-category">Headphone</a>
-                                    <a href="#">
-                                        <h3 class="showcase-title">Beats Studio<sup>3</sup></h3>
-                                    </a>
-
-                                    <div class="showcase-rating">
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                    </div>
-
-                                    <div class="price-box">
-                                        <p class="price">$241.47</p>
-                                        <del>$349.95</del>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimonials">
-            <div class="container">
-                <div class="customers-testimonials-box">
-                    <div class="testimonials-content">
-                        <h2 class="title">Customers Testimonial</h2>
-                        <input type="radio" name="" class="btn-slide" id="btn-slide1">
-                        <input type="radio" name="" class="btn-slide" id="btn-slide2">
-                        <input type="radio" name="" class="btn-slide" id="btn-slide3">
-                        <input type="radio" name="" class="btn-slide" id="btn-slide4">
-                        <input type="radio" name="" class="btn-slide" id="btn-slide5">
-                        <input type="radio" name="" class="btn-slide" id="btn-slide6">
-                        <div class="testimonial-wrapper has-scrollbar">
-                            <div class="testimonial-card-content">
-                                <img src="../../src/img/testimonial/billgates.jpg" alt="" class="testimonial-benner" width="80"
-                                    height="80">
-                                <p class="customer-name">billgates</p>
-                                <p class="customer-title">CO-Founder of Microsoft</p>
-                                <p class="testimonial-description">
-                                <blockquote>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo, dicta, aspernatur
-                                    . Iusto, accusantium autem!
-                                </blockquote>
-                                </p>
-                            </div>
-                            <div class="testimonial-card-content">
-                                <img src="../../src/img/testimonial/daniel.jpg" alt="" class="testimonial-benner" width="80"
-                                    height="80">
-                                <p class="customer-name">daniel</p>
-                                <p class="customer-title">CO-Founder of Microsoft</p>
-                                <p class="testimonial-description">
-                                <blockquote>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo, dicta, aspernatur
-                                    sequi, voluptas quaerat assumenda ad atque rerum eius mollitia voluptatem incidunt
-                                    praesentium debitis quisquam aliquid. Iusto, accusantium autem!
-                                </blockquote>
-                                </p>
-                            </div>
-                            <div class="testimonial-card-content">
-                                <img src="../../src/img/testimonial/elonmusk.jpg" alt="" class="testimonial-benner" width="80"
-                                    height="80">
-                                <p class="customer-name">elon musk</p>
-                                <p class="customer-title">CO-Founder of Microsoft</p>
-                                <p class="testimonial-description">
-                                <blockquote>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo, dicta, aspernatur
-                                    sequi, voluptas quaerat assumenda ad atque rerum eius mollitia voluptatem incidunt
-                                    praesentium debitis quisquam aliquid. Iusto, accusantium autem!
-                                </blockquote>
-                                </p>
-                            </div>
-                            <div class="testimonial-card-content">
-                                <img src="../../src/img/testimonial/larrypage.jpg" alt="" class="testimonial-benner" width="80"
-                                    height="80">
-                                <p class="customer-name">larry page</p>
-                                <p class="customer-title">CO-Founder of Microsoft</p>
-                                <p class="testimonial-description">
-                                <blockquote>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo, dicta, aspernatur
-                                    sequi, voluptas quaerat assumenda ad atque rerum eius mollitia voluptatem incidunt
-                                    praesentium debitis quisquam aliquid. Iusto, accusantium autem!
-                                </blockquote>
-                                </p>
-                            </div>
-                            <div class="testimonial-card-content">
-                                <img src="../../src/img/testimonial/markzuck.jpg" alt="" class="testimonial-benner" width="80"
-                                    height="80">
-                                <p class="customer-name">mark zuckerburg</p>
-                                <p class="customer-title">CO-Founder of Microsoft</p>
-                                <p class="testimonial-description">
-                                <blockquote>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo, dicta, aspernatur
-                                    sequi, voluptas quaerat assumenda ad atque rerum eius mollitia voluptatem incidunt
-                                    praesentium debitis quisquam aliquid. Iusto, accusantium autem!
-                                </blockquote>
-                                </p>
-                            </div>
-                            <div class="testimonial-card-content">
-                                <img src="../../src/img/testimonial/patrick.jpg" alt="" class="testimonial-benner" width="80"
-                                    height="80">
-                                <p class="customer-name">patrick</p>
-                                <p class="customer-title">CO-Founder of Microsoft</p>
-                                <p class="testimonial-description">
-                                <blockquote>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo, dicta, aspernatur
-                                    sequi, voluptas quaerat assumenda ad atque rerum eius mollitia voluptatem incidunt
-                                    praesentium debitis quisquam aliquid. Iusto, accusantium autem!
-                                </blockquote>
-                                </p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="special-offer-container">
-                        <img src="../../src/img/products/cb2.jpg" alt="" class="special-offer-benner">
-                        <a href="#" class="special-offer-content">
-                            <p class="special-offer-discount">25% Discount</p>
-                            <h2 class="special-offer-title">Beats<sup>3</sup> Collection</h2>
-                            <p class="special-offer-text">starting at $230.95</p>
-                            <button class="special-offer-button">Get it Now</button>
-                        </a>
-
-                    </div>
-                    <div class="service">
-                        <h2 class="title">Our Services</h2>
-                        <div class="service-container">
-                            <article class="service-item-container">
-                                <a href="#" class="service-item">
-                                    <div class="service-icon">
-                                        <ion-icon name="boat-outline"></ion-icon>
-                                    </div>
-
-                                    <div class="service-item-content">
-                                        <h3 class="service-item-title">World Delivery</h3>
-                                        <p class="sevice-item-desc">For Order Over $250</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="service-item">
-                                    <div class="service-icon">
-                                        <ion-icon name="rocket-outline"></ion-icon>
-                                    </div>
-
-                                    <div class="service-item-content">
-                                        <h3 class="service-item-title">Next Day Delivery</h3>
-                                        <p class="sevice-item-desc">USA Only</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="service-item">
-                                    <div class="service-icon">
-                                        <ion-icon name="call-outline"></ion-icon>
-                                    </div>
-
-                                    <div class="service-item-content">
-                                        <h3 class="service-item-title">Non Stop Online Support</h3>
-                                        <p class="sevice-item-desc">getsupport.ourstore.com</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="service-item">
-                                    <div class="service-icon">
-                                        <ion-icon name="ticket-outline"></ion-icon>
-                                    </div>
-
-                                    <div class="service-item-content">
-                                        <h3 class="service-item-title">30% Money Back</h3>
-                                        <p class="sevice-item-desc">For Order Over $850</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="service-item">
-                                    <div class="service-icon">
-                                        <ion-icon name="arrow-undo-outline"></ion-icon>
-                                    </div>
-
-                                    <div class="service-item-content">
-                                        <h3 class="service-item-title">Return Policy</h3>
-                                        <p class="sevice-item-desc">Easy and Free for Return</p>
-                                    </div>
-                                </a>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="blog">
-            <div class="container">
-                <div class="blog-container has-scrollbar">
-                    <div class="blog-card">
-                        <a href="#">
-                            <img src="../../src/img/products/b4.jpg" alt="" class="blog-benner" width="300">
-                        </a>
-                        <div class="blog-content">
-                            <a href="#" class="blog-category">headphone</a>
-                            <a href="#">
-                                <h3 class="blog-title">Beats <sup>3</sup> Headphone </h3>
-
-                                <p class="blog-meta">
-                                    By <cite>Beats</cite> / <time datetime="2022-14-12">Des 14, 2022</time>
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <a href="#">
-                            <img src="../../src/img/products/bk4.jpg" alt="" class="blog-benner" width="300">
-                        </a>
-                        <div class="blog-content">
-                            <a href="#" class="blog-category">headphone</a>
-                            <a href="#">
-                                <h3 class="blog-title">Beats <sup>3</sup> Headphone </h3>
-
-                                <p class="blog-meta">
-                                    By <cite>Beats</cite> / <time datetime="2022-14-12">Des 14, 2022</time>
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <a href="#">
-                            <img src="../../src/img/products/cb3.jpg" alt="" class="blog-benner" width="300">
-                        </a>
-                        <div class="blog-content">
-                            <a href="#" class="blog-category">headphone</a>
-                            <a href="#">
-                                <h3 class="blog-title">Beats <sup>3</sup> Headphone </h3>
-
-                                <p class="blog-meta">
-                                    By <cite>Beats</cite> / <time datetime="2022-14-12">Des 14, 2022</time>
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <a href="#">
-                            <img src="../../src/img/products/g3.jpg" alt="" class="blog-benner" width="300">
-                        </a>
-                        <div class="blog-content">
-                            <a href="#" class="blog-category">headphone</a>
-                            <a href="#">
-                                <h3 class="blog-title">Beats <sup>3</sup> Headphone </h3>
-
-                                <p class="blog-meta">
-                                    By <cite>Beats</cite> / <time datetime="2022-14-12">Des 14, 2022</time>
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <a href="#">
-                            <img src="../../src/img/products/r3.jpg" alt="" class="blog-benner" width="300">
-                        </a>
-                        <div class="blog-content">
-                            <a href="#" class="blog-category">headphone</a>
-                            <a href="#">
-                                <h3 class="blog-title">Beats <sup>3</sup> Headphone </h3>
-
-                                <p class="blog-meta">
-                                    By <cite>Beats</cite> / <time datetime="2022-14-12">Des 14, 2022</time>
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <a href="#">
-                            <img src="../../src/img/products/fr4.jpg" alt="" class="blog-benner" width="300">
-                        </a>
-                        <div class="blog-content">
-                            <a href="#" class="blog-category">headphone</a>
-                            <a href="#">
-                                <h3 class="blog-title">Beats <sup>3</sup> Headphone </h3>
-
-                                <p class="blog-meta">
-                                    By <cite>Beats</cite> / <time datetime="2022-14-12">Des 14, 2022</time>
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <a href="#">
-                            <img src="../../src/img/products/w4.jpg" alt="" class="blog-benner" width="300">
-                        </a>
-                        <div class="blog-content">
-                            <a href="#" class="blog-category">headphone</a>
-                            <a href="#">
-                                <h3 class="blog-title">Beats <sup>3</sup> Headphone </h3>
-
-                                <p class="blog-meta">
-                                    By <cite>Beats</cite> / <time datetime="2022-14-12">Des 14, 2022</time>
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-category">
-            <div class="container">
-                <h2 class="footer-category-title">Brand Directory</h2>
-                <div class="footer-category-box">
-                    <h3 class="category-box-title">Smartphone</h3>
-                    <a href="#" class="category-link">Smartphone-1</a>
-                    <a href="#" class="category-link">Smartphone-1</a>
-                    <a href="#" class="category-link">Smartphone-1</a>
-                    <a href="#" class="category-link">Smartphone-1</a>
-                    <a href="#" class="category-link">Smartphone-1</a>
-                </div>
-                <div class="footer-category-box">
-                    <h3 class="category-box-title">Watch</h3>
-                    <a href="#" class="category-link">Watch-1</a>
-                    <a href="#" class="category-link">Watch-1</a>
-                    <a href="#" class="category-link">Watch-1</a>
-                    <a href="#" class="category-link">Watch-1</a>
-                    <a href="#" class="category-link">Watch-1</a>
-                </div>
-                <div class="footer-category-box">
-                    <h3 class="category-box-title">Headphone</h3>
-                    <a href="#" class="category-link">Headphone-1</a>
-                    <a href="#" class="category-link">Headphone-1</a>
-                    <a href="#" class="category-link">Headphone-1</a>
-                    <a href="#" class="category-link">Headphone-1</a>
-                    <a href="#" class="category-link">Headphone-1</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-nav">
-            <div class="container">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <h2 class="nav-title">Popular Categories</h2>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="footer-nav-link">Headphone</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="footer-nav-link">Smartphone</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="footer-nav-link">Watch</a>
-                    </li>
-                </ul>
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <h2 class="nav-title">Contact</h2>
-                    </li>
-                    <li class="nav-item flex">
-                        <div class="box-icon">
-                            <ion-icon name="location-outline"></ion-icon>
-                        </div>
-
-                        <address class="content">
-                            Pekalongan, Jawa Tengah, Indonesia
-                        </address>
-                    </li>
-                    <li class="nav-item flex">
-                        <div class="box-icon">
-                            <ion-icon name="call-outline"></ion-icon>
-                        </div>
-                        <a href="tel:+123032123" class="nav-link">+62 12345 6789</a>
-                    </li>
-                    <li class="nav-item flex">
-                        <div class="box-icon">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </div>
-                        <a href="mailto:fakemail@gmail.com" class="nav-link">support@gmail.com</a>
-                    </li>
-                </ul>
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <h2 class="nav-title">Follow Us</h2>
-                    </li>
-
-                    <li>
-                        <ul class="social-link">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <ion-icon name="logo-facebook"></ion-icon>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <ion-icon name="logo-twitter"></ion-icon>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <h2>Sponsor</h2>
-            <div class="sponsor-container">
-                <div class="sponsor-item">
-                    <img src="../../src/img/sponsor/sponsor1.png" alt="sponsored by Apple" class="sponsor-img">
-                    <img src="../../src/img/sponsor/sponsor2.png" alt="sponsored by Spotify" class="sponsor-img">
-                    <img src="../../src/img/sponsor/sponsor3.png" alt="sponsored by Amazon" class="sponsor-img">
-                    <img src="../../src/img/sponsor/sponsor4.png" alt="sponsored by Youtube" class="sponsor-img">
-                </div>
-            </div>
-            <div class="container">
-                <div class="payment">
-                    <h4>Payment Method</h4>
-                    <img src="../../src/img/sponsor/payment.png" alt="payment method" class="payment-img">
-                </div>
-
-            </div>
-            <p class="copyright">
-                Copyright &copy; <a href="#"> CornerStore </a> all right reserved.
-            </p>
-        </div>
-        </div>
-        </div>
-    </footer>
-
-    <script src="../../src/js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/ionicons/ionicons.js"></script>
+<div class=overlay data-overlay></div>
+<div class=modal data-modal>
+<div class=modal-close-overlay data-modal-overlay></div>
+<div class=modal-content>
+<button class=modal-close-btn data-modal-close>
+<ion-icon name=close-outline></ion-icon>
+</button>
+<div class=newsletter-img>
+<img src=../../src/img/banner/newletter-img.png alt=subscribe width=300 height=300>
+</div>
+<div class=newsletter>
+<form action=#>
+<div class=newsletter-header>
+<h3 class=newsletter-title>Subscribe</h3>
+<p class=newsletter-desc>Subscribe the <b>Beats Store</b> to get latest product and discount
+update</p>
+</div>
+<input type=email name=email class=email-field id placeholder="type your email" required>
+<button type=submit class=btn-newsletter>Subscribe</button>
+</form>
+</div>
+</div>
+</div>
+<div class=notification-toast data-toast>
+<button class=toast-close-btn data-toast-close>
+<ion-icon name=close-outline></ion-icon>
+</button>
+<div class=toast-banner>
+<img src=../../src/img/products/b1.jpg alt width=80 height=70>
+</div>
+<div class=toast-detail>
+<p class=toast-message>
+Someone in new just bought
+</p>
+<p class=toast-title>
+Beats's Product
+</p>
+<p class=toast-meta>
+<time datetime=PT2M>2 Minutes</time> ago
+</p>
+</div>
+</div>
+<header>
+<div class=header-top>
+<div class=container>
+<ul class=header-social-container>
+<li>
+<a href=# class=social-link>
+<ion-icon name=logo-facebook></ion-icon>
+</a>
+</li>
+<li>
+<a href=# class=social-link>
+<ion-icon name=logo-twitter></ion-icon>
+</a>
+</li>
+<li>
+<a href=# class=social-link>
+<ion-icon name=logo-instagram></ion-icon>
+</a>
+</li>
+<li>
+<a href=# class=social-link>
+<ion-icon name=logo-linkedin></ion-icon>
+</a>
+</li>
+</ul>
+<div class=header-alert-news>
+<p><b>Free Shipping</b>This Week Order Over - $250</p>
+</div>
+<div class=header-top-actions>
+<select name=currency>
+<option value=usd>USD &dollar;</option>
+<option value=usd>EUR &euro;</option>
+</select>
+<select name=language>
+<option value=es-US>English</option>
+<option value=es-ES>Espa&ntilde;ol</option>
+<option value=fr>Fran&ccedil;ais</option>
+</select>
+</div>
+</div>
+</div>
+<div class=header-main>
+<div class=container>
+<a href=# class=header-logo>
+<img src=../../src/img/logo/manlogo.PNG alt=logo width=80>
+</a>
+<div class=header-search-container>
+<input type=search name=search class=search-field placeholder="search by product name">
+<button class=search-btn>
+<ion-icon name=search-outline></ion-icon>
+</button>
+</div>
+<div class=header-user-actions>
+<button class=action-btn>
+<a href=../pages/signin.html>
+<ion-icon name=person-outline></ion-icon>
+</a>
+</button>
+<button class=action-btn>
+<ion-icon name=heart-outline></ion-icon>
+<span class=count>0</span>
+</button>
+<button class=action-btn>
+<ion-icon name=cart-outline></ion-icon>
+<span class=count>0</span>
+</button>
+</div>
+</div>
+</div>
+<nav class=desktop-nav-menu>
+<div class=container>
+<ul class=desktop-menu-category-list>
+<li class=menu-category>
+<a href=# class=menu-title>Home</a>
+</li>
+<li class=menu-category>
+<a href=# class=menu-title>Categories</a>
+<div class=dropdown-panel>
+<ul class=dropdown-panel-list>
+<li class=menu-title>
+<a href=#>Headphone</a>
+</li>
+<li class=panel-list-item>
+<a href=#>Product-1</a>
+</li>
+<li class=panel-list-item>
+<a href=#>Product-2</a>
+</li>
+<li class=panel-list-item>
+<a href=#>Product-3</a>
+</li>
+<li class=panel-list-item>
+<a href=#>Product-4</a>
+</li>
+<li class=panel-list-item>
+<a href=#>
+<img src=../../src/img/banner/banner-2-headphone.png alt="Headphone Collection" width=250 height=119>
+</a>
+</li>
+</ul>
+<ul class=dropdown-panel-list>
+<li class=menu-title>
+<a href=#>Smartphone</a>
+</li>
+<li class=panel-list-item>
+<a href=#>Product-A</a>
+</li>
+<li class=panel-list-item>
+<a href=#>Product-B</a>
+</li>
+<li class=panel-list-item>
+<a href=#>Product-C</a>
+</li>
+<li class=panel-list-item>
+<a href=#>Product-D</a>
+</li>
+<li class=panel-list-item>
+<a href=#>
+<img src=../../src/img/banner/banner-2-handphone.png alt="Headphone Collection" width=250 height=119>
+</a>
+</li>
+</ul>
+<ul class=dropdown-panel-list>
+<li class=menu-title>
+<a href=#>Watch</a>
+</li>
+<li class=panel-list-item>
+<a href=#>Product-1</a>
+</li>
+<li class=panel-list-item>
+<a href=#>Product-2</a>
+</li>
+<li class=panel-list-item>
+<a href=#>Product-3</a>
+</li>
+<li class=panel-list-item>
+<a href=#>Product-4</a>
+</li>
+<li class=panel-list-item>
+<a href=#>
+<img src=../../src/img/banner/banner-2-watch.png alt="Headphone Collection" width=250 height=119>
+</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+<div class=mobile-bottom-nav>
+<button class=action-btn data-mobile-menu-open-btn>
+<ion-icon name=menu-outline></ion-icon>
+</button>
+<button class=action-btn>
+<ion-icon name=cart-outline></ion-icon>
+<span class=count>0</span>
+</button>
+<button class=action-btn>
+<ion-icon name=home-outline></ion-icon>
+</button>
+<button class=action-btn>
+<ion-icon name=heart-outline></ion-icon>
+<span class=count>0</span>
+</button>
+<button class=action-btn data-mobile-menu-open-btn>
+<ion-icon name=grid-outline></ion-icon>
+</button>
+</div>
+<nav class="mobile-nav-menu has-scrollbar" data-mobile-menu>
+<div class=menu-top>
+<h2 class=menu-title>Menu</h2>
+<button class=menu-close-btn data-mobile-menu-close-btn>
+<ion-icon name=close-outline></ion-icon>
+</button>
+</div>
+<ul class=mobile-menu-category-list>
+<li class=menu-category>
+<a href=# class=menu-title>Home</a>
+</li>
+<li class=menu-category>
+<button class=accordion-menu data-accordion-btn>
+<p class=menu-title>Headphone</p>
+<div>
+<ion-icon name=add-outline class=add-icon></ion-icon>
+<ion-icon name=remove-outline class=remove-icon></ion-icon>
+</div>
+</button>
+<ul class=submenu-category-list data-accordion>
+<li class=submenu-category>
+<a href=# class=submenu-title>product-A</a>
+</li>
+<li class=submenu-category>
+<a href=# class=submenu-title>product-B</a>
+</li>
+<li class=submenu-category>
+<a href=# class=submenu-title>product-C</a>
+</li>
+<li class=submenu-category>
+<a href=# class=submenu-title>product-D</a>
+</li>
+</ul>
+</li>
+<li class=menu-category>
+<button class=accordion-menu data-accordion-btn>
+<p class=menu-title>Watch</p>
+<div>
+<ion-icon name=add-outline class=add-icon></ion-icon>
+<ion-icon name=remove-outline class=remove-icon></ion-icon>
+</div>
+</button>
+<ul class=submenu-category-list data-accordion>
+<li class=submenu-category>
+<a href=# class=submenu-title>product-A</a>
+</li>
+<li class=submenu-category>
+<a href=# class=submenu-title>product-B</a>
+</li>
+<li class=submenu-category>
+<a href=# class=submenu-title>product-C</a>
+</li>
+<li class=submenu-category>
+<a href=# class=submenu-title>product-D</a>
+</li>
+</ul>
+</li>
+<li class=menu-category>
+<button class=accordion-menu data-accordion-btn>
+<p class=menu-title>Smartphone</p>
+<div>
+<ion-icon name=add-outline class=add-icon></ion-icon>
+<ion-icon name=remove-outline class=remove-icon></ion-icon>
+</div>
+</button>
+<ul class=submenu-category-list data-accordion>
+<li class=submenu-category>
+<a href=# class=submenu-title>product-A</a>
+</li>
+<li class=submenu-category>
+<a href=# class=submenu-title>product-B</a>
+</li>
+<li class=submenu-category>
+<a href=# class=submenu-title>product-C</a>
+</li>
+<li class=submenu-category>
+<a href=# class=submenu-title>product-D</a>
+</li>
+</ul>
+</li>
+<li class=menu-category>
+<a href=# class=menu-title>Blog</a>
+</li>
+<li class=menu-category>
+<a href=# class=menu-title>Hot Offers</a>
+</li>
+<li class=menu-category>
+<a href=../pages/signin.html class=menu-title>Login</a>
+</li>
+</ul>
+<div class=menu-bottom>
+<ul class=menu-category-list>
+<li class=menu-category>
+<button class=accordion-menu data-accordion-btn>
+<p class=menu-title>Currency</p>
+<ion-icon name=caret-back-outline class=caret-back></ion-icon>
+</button>
+<ul class=submenu-category-list data-accordion>
+<li class=submenu-category>
+<a href=# class=submenu-title>USD &dollar;</a>
+</li>
+<li class=submenu-category>
+<a href=# class=submenu-title>EUR &euro;</a>
+</li>
+</ul>
+</li>
+<li class=menu-category>
+<button class=accordion-menu data-accordion-btn>
+<p class=menu-title>Language</p>
+<ion-icon name=caret-back-outline class=caret-back></ion-icon>
+</button>
+<ul class=submenu-category-list data-accordion>
+<li class=submenu-category>
+<a href=# class=submenu-title>English</a>
+</li>
+<li class=submenu-category>
+<a href=# class=submenu-title>Espa&ntilde;ol</a>
+</li>
+<li class=submenu-category>
+<a href=# class=submenu-title>Fren&ccedil;h</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class=menu-social-container>
+<li>
+<a href=# class=social-link>
+<ion-icon name=logo-facebook></ion-icon>
+</a>
+</li>
+<li>
+<a href=# class=social-link>
+<ion-icon name=logo-twitter></ion-icon>
+</a>
+</li>
+<li>
+<a href=# class=social-link>
+<ion-icon name=logo-instagram></ion-icon>
+</a>
+</li>
+<li>
+<a href=# class=social-link>
+<ion-icon name=logo-linkedin></ion-icon>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<main>
+<div class=banner>
+<div class=container>
+<div class="slider-container has-scrollbar">
+<div class=slider-item>
+<img src=../../src/img/banner/banner-jam.png alt class=banner-img>
+<div class=banner-content>
+<p class=banner-subtitle>Trending Item</p>
+<h2 class=banner-title>Tranding Item</h2>
+<p class=banner-text>
+starting at $ <b>332</b>.80
+</p>
+<a href=# class=banner-btn>Shop Now</a>
+</div>
+</div>
+<div class=slider-item>
+<img src=../../src/img/banner/banner-handphone.png alt class=banner-img>
+<div class=banner-content>
+<p class=banner-subtitle>Trending Item</p>
+<h2 class=banner-title>Limited Edition</h2>
+<p class=banner-text>
+starting at $ <b>928</b>.00
+</p>
+<a href=# class=banner-btn>Shop Now</a>
+</div>
+</div>
+<div class=slider-item>
+<img src=../../src/img/banner/banner-headphone.png alt class=banner-img>
+<div class=banner-content>
+<p class=banner-subtitle>Trending Item</p>
+<h2 class=banner-title>Special Offer</h2>
+<p class=banner-text>
+starting at $ <b>249</b>.60
+</p>
+<a href=# class=banner-btn>Shop Now</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class=category>
+<div class=container>
+<div class="category-item-container has-scrollbar">
+<div class=category-item>
+<div class=category-img-box>
+<img src=../../src/img/logo/handphone.jpg alt width=30>
+</div>
+<div class=category-content-box>
+<div class=category-content-flex>
+<h3 class=category-item-title>watch</h3>
+<p class=category-item-amount>(23)</p>
+</div>
+<a href=# class=category-btn>Show All</a>
+</div>
+</div>
+<div class=category-item>
+<div class=category-img-box>
+<img src=../../src/img/logo/headphone.jpg alt height=32 width=35>
+</div>
+<div class=category-content-box>
+<div class=category-content-flex>
+<h3 class=category-item-title>watch</h3>
+<p class=category-item-amount>(23)</p>
+</div>
+<a href=# class=category-btn>Show All</a>
+</div>
+</div>
+<div class=category-item>
+<div class=category-img-box>
+<img src=../../src/img/logo/watch.jpg alt width=30>
+</div>
+<div class=category-content-box>
+<div class=category-content-flex>
+<h3 class=category-item-title>watch</h3>
+<p class=category-item-amount>(23)</p>
+</div>
+<a href=# class=category-btn>Show All</a>
+</div>
+</div>
+<div class=category-item>
+<div class=category-img-box>
+<img src=../../src/img/logo/headphone.jpg alt height=32 width=35>
+</div>
+<div class=category-content-box>
+<div class=category-content-flex>
+<h3 class=category-item-title>watch</h3>
+<p class=category-item-amount>(23)</p>
+</div>
+<a href=# class=category-btn>Show All</a>
+</div>
+</div>
+<div class=category-item>
+<div class=category-img-box>
+<img src=../../src/img/logo/handphone.jpg alt width=30>
+</div>
+<div class=category-content-box>
+<div class=category-content-flex>
+<h3 class=category-item-title>watch</h3>
+<p class=category-item-amount>(23)</p>
+</div>
+<a href=# class=category-btn>Show All</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class=product-container>
+<div class=container>
+<div class="slidebar has-scrollbar" data-mobile-menu>
+<div class=slidebar-category>
+<div class=slidebar-top>
+<h2 class=slidebar-title>Category</h2>
+<button class=slidebar-close-btn data-mobile-menu-close-btn>
+<ion-icon name=close-outline></ion-icon>
+</button>
+</div>
+<ul class=slidebar-menu-category-list>
+<li class=slidebar-menu-category>
+<button class=slidebar-accordion-menu data-accordion-btn>
+<div class=menu-title-flex>
+<img src=../../src/img/logo/handphone.jpg alt width=20 class=menu-title-img>
+<p class=menu-title>Handphone</p>
+</div>
+<div>
+<ion-icon name=add-outline class=add-icon></ion-icon>
+<ion-icon name=remove-outline class=remove-icon></ion-icon>
+</div>
+</button>
+<ul class=slidebar-submenu-category-list data-accordion>
+<li class=slidebar-submenu-category>
+<a href=# class=slidebar-submenu-title>
+<p class=product-name>Samsung</p>
+<data value=300 class=stock title="available stock">58</data>
+</a>
+</li>
+<li class=slidebar-submenu-category>
+<a href=# class=slidebar-submenu-title>
+<p class=product-name>Apple</p>
+<data value=300 class=stock title="available stock">32</data>
+</a>
+</li>
+<li class=slidebar-submenu-category>
+<a href=# class=slidebar-submenu-title>
+<p class=product-name>Asus</p>
+<data value=300 class=stock title="available stock">60</data>
+</a>
+</li>
+</ul>
+</li>
+<li class=slidebar-menu-category>
+<button class=slidebar-accordion-menu data-accordion-btn>
+<div class=menu-title-flex>
+<img src=../../src/img/logo/headphone.jpg alt width=20 height=22 class=menu-title-img>
+<p class=menu-title>Headphone</p>
+</div>
+<div>
+<ion-icon name=add-outline class=add-icon></ion-icon>
+<ion-icon name=remove-outline class=remove-icon></ion-icon>
+</div>
+</button>
+<ul class=slidebar-submenu-category-list data-accordion>
+<li class=slidebar-submenu-category>
+<a href=# class=slidebar-submenu-title>
+<p class=product-name>Beats</p>
+<data value=300 class=stock title="available stock">120</data>
+</a>
+</li>
+<li class=slidebar-submenu-category>
+<a href=# class=slidebar-submenu-title>
+<p class=product-name>Sony</p>
+<data value=300 class=stock title="available stock">200</data>
+</a>
+</li>
+<li class=slidebar-submenu-category>
+<a href=# class=slidebar-submenu-title>
+<p class=product-name>Razer</p>
+<data value=300 class=stock title="available stock">150</data>
+</a>
+</li>
+</ul>
+</li>
+<li class=slidebar-menu-category>
+<button class=slidebar-accordion-menu data-accordion-btn>
+<div class=menu-title-flex>
+<img src=../../src/img/logo/watch.jpg alt width=20 class=menu-title-img>
+<p class=menu-title>Watch</p>
+</div>
+<div>
+<ion-icon name=add-outline class=add-icon></ion-icon>
+<ion-icon name=remove-outline class=remove-icon></ion-icon>
+</div>
+</button>
+<ul class=slidebar-submenu-category-list data-accordion>
+<li class=slidebar-submenu-category>
+<a href=# class=slidebar-submenu-title>
+<p class=product-name>Casio</p>
+<data value=300 class=stock title="available stock">80</data>
+</a>
+</li>
+<li class=slidebar-submenu-category>
+<a href=# class=slidebar-submenu-title>
+<p class=product-name>Fossil</p>
+<data value=300 class=stock title="available stock">96</data>
+</a>
+</li>
+<li class=slidebar-submenu-category>
+<a href=# class=slidebar-submenu-title>
+<p class=product-name>Orient</p>
+<data value=300 class=stock title="available stock">84</data>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class=product-showcase>
+<h3 class=showcase-heading>Best Seller</h3>
+<div class=showcase-wrapper>
+<div class=showcase-container>
+<div class=showcase>
+<a href=# class=showcase-img-box>
+<img src=../../src/img/products/product1.png alt class=showcase-img width=75>
+</a>
+<div class=showcase-content>
+<a href=#>
+<h4 class=showcase-title>Product-1</h4>
+</a>
+<div class=showcase-rating>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+</div>
+<div class=price-box>
+<del>&dollar;360.70</del>
+<p class=price>&dollar;246.00</p>
+</div>
+</div>
+</div>
+<div class=showcase>
+<a href=# class=showcase-img-box>
+<img src=../../src/img/products/product2.png alt class=showcase-img width=75>
+</a>
+<div class=showcase-content>
+<a href=#>
+<h4 class=showcase-title>Product-2</h4>
+</a>
+<div class=showcase-rating>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+</div>
+<div class=price-box>
+<del>&dollar;379.70</del>
+<p class=price>&dollar;200.15</p>
+</div>
+</div>
+</div>
+<div class=showcase>
+<a href=# class=showcase-img-box>
+<img src=../../src/img/products/product3.png alt class=showcase-img width=75>
+</a>
+<div class=showcase-content>
+<a href=#>
+<h4 class=showcase-title>Product-3</h4>
+</a>
+<div class=showcase-rating>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+</div>
+<div class=price-box>
+<del>&dollar;360.99</del>
+<p class=price>&dollar;206.20</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=product-box>
+<div class=product-minimal>
+<div class=product-showcase>
+<h2 class=title>New Products</h2>
+<div class="showcase-wrapper has-scrollbar">
+<div class=showcase-container>
+<div class=showcase>
+<a href=# class=showcase-img-box>
+<img src=../../src/img/products/product1.png alt width=70 class=showcase-img>
+</a>
+<div class=showcase-content>
+<a href=#>
+<h4 class=showcase-title>Matte Black</h4>
+</a>
+<a href=# class=showcase-category>Headphone</a>
+<div class=price-box>
+<p class=price>$200.29</p>
+<del>$330.95</del>
+</div>
+</div>
+</div>
+<div class=showcase>
+<a href=# class=showcase-img-box>
+<img src=../../src/img/products/product2.png alt width=70 class=showcase-img>
+</a>
+<div class=showcase-content>
+<a href=#>
+<h4 class=showcase-title>Defiant Black Red</h4>
+</a>
+<a href=# class=showcase-category>Headphone</a>
+<div class=price-box>
+<p class=price>$283.99</p>
+<del>$389.99</del>
+</div>
+</div>
+</div>
+<div class=showcase>
+<a href=# class=showcase-img-box>
+<img src=../../src/img/products/product3.png alt width=70 class=showcase-img>
+</a>
+<div class=showcase-content>
+<a href=#>
+<h4 class=showcase-title>Midnight Black</h4>
+</a>
+<a href=# class=showcase-category>Headphone</a>
+<div class=price-box>
+<p class=price>$263.99</p>
+<del>$349.95</del>
+</div>
+</div>
+</div>
+<div class=showcase>
+<a href=# class=showcase-img-box>
+<img src=../../src/img/products/product4.png alt width=70 class=showcase-img>
+</a>
+<div class=showcase-content>
+<a href=#>
+<h4 class=showcase-title>Blue</h4>
+</a>
+<a href=# class=showcase-category>Headphone</a>
+<div class=price-box>
+<p class=price>$263.99</p>
+<del>$349.95</del>
+</div>
+</div>
+</div>
+</div>
+<div class=showcase-container>
+<div class=showcase>
+<a href=# class=showcase-img-box>
+<img src=../../src/img/products/product2.png alt width=70 class=showcase-img>
+</a>
+<div class=showcase-content>
+<a href=#>
+<h4 class=showcase-title>Defiant Black Red</h4>
+</a>
+<a href=# class=showcase-category>Headphone</a>
+<div class=price-box>
+<p class=price>$263.99</p>
+<del>$349.95</del>
+</div>
+</div>
+</div>
+<div class=showcase>
+<a href=# class=showcase-img-box>
+<img src=../../src/img/products/product5.png alt width=70 class=showcase-img>
+</a>
+<div class=showcase-content>
+<a href=#>
+<h4 class=showcase-title>Shadow Gray</h4>
+</a>
+<a href=# class=showcase-category>Headphone</a>
+<div class=price-box>
+<p class=price>$263.99</p>
+<del>$349.95</del>
+</div>
+</div>
+</div>
+<div class=showcase>
+<a href=# class=showcase-img-box>
+<img src=../../src/img/products/product3.png alt width=70 class=showcase-img>
+</a>
+<div class=showcase-content>
+<a href=#>
+<h4 class=showcase-title>Midnight Black</h4>
+</a>
+<a href=# class=showcase-category>Headphone</a>
+<div class=price-box>
+<p class=price>$263.99</p>
+<del>$349.95</del>
+</div>
+</div>
+</div>
+<div class=showcase>
+<a href=# class=showcase-img-box>
+<img src=../../src/img/products/product4.png alt width=70 class=showcase-img>
+</a>
+<div class=showcase-content>
+<a href=#>
+<h4 class=showcase-title>Blue</h4>
+</a>
+<a href=# class=showcase-category>Headphone</a>
+<div class=price-box>
+<p class=price>$263.99</p>
+<del>$349.95</del>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=product-showcase>
+<h2 class=title>New Products</h2>
+<div class="showcase-wrapper has-scrollbar">
+<div class=showcase-container>
+<div class=showcase>
+<a href=# class=showcase-img-box>
+<img src=../../src/img/products/product1.png alt width=70 class=showcase-img>
+</a>
+<div class=showcase-content>
+<a href=#>
+<h4 class=showcase-title>Matte Black</h4>
+</a>
+<a href=# class=showcase-category>Headphone</a>
+<div class=price-box>
+<p class=price>$263.99</p>
+<del>$349.95</del>
+</div>
+</div>
+</div>
+<div class=showcase>
+<a href=# class=showcase-img-box>
+<img src=../../src/img/products/product2.png alt width=70 class=showcase-img>
+</a>
+<div class=showcase-content>
+<a href=#>
+<h4 class=showcase-title>Defiant Black Red</h4>
+</a>
+<a href=# class=showcase-category>Headphone</a>
+<div class=price-box>
+<p class=price>$263.99</p>
+<del>$349.95</del>
+</div>
+</div>
+</div>
+<div class=showcase>
+<a href=# class=showcase-img-box>
+<img src=../../src/img/products/product3.png alt width=70 class=showcase-img>
+</a>
+<div class=showcase-content>
+<a href=#>
+<h4 class=showcase-title>Midnight Black</h4>
+</a>
+<a href=# class=showcase-category>Headphone</a>
+<div class=price-box>
+<p class=price>$263.99</p>
+<del>$349.95</del>
+</div>
+</div>
+</div>
+<div class=showcase>
+<a href=# class=showcase-img-box>
+<img src=../../src/img/products/product4.png alt width=70 class=showcase-img>
+</a>
+<div class=showcase-content>
+<a href=#>
+<h4 class=showcase-title>Blue</h4>
+</a>
+<a href=# class=showcase-category>Headphone</a>
+<div class=price-box>
+<p class=price>$263.99</p>
+<del>$349.95</del>
+</div>
+</div>
+</div>
+</div>
+<div class=showcase-container>
+<div class=showcase>
+<a href=# class=showcase-img-box>
+<img src=../../src/img/products/product2.png alt width=70 class=showcase-img>
+</a>
+<div class=showcase-content>
+<a href=#>
+<h4 class=showcase-title>Defiant Black Red</h4>
+</a>
+<a href=# class=showcase-category>Headphone</a>
+<div class=price-box>
+<p class=price>$263.99</p>
+<del>$349.95</del>
+</div>
+</div>
+</div>
+<div class=showcase>
+<a href=# class=showcase-img-box>
+<img src=../../src/img/products/product5.png alt width=70 class=showcase-img>
+</a>
+<div class=showcase-content>
+<a href=#>
+<h4 class=showcase-title>Shadow Gray</h4>
+</a>
+<a href=# class=showcase-category>Headphone</a>
+<div class=price-box>
+<p class=price>$263.99</p>
+<del>$349.95</del>
+</div>
+</div>
+</div>
+<div class=showcase>
+<a href=# class=showcase-img-box>
+<img src=../../src/img/products/product3.png alt width=70 class=showcase-img>
+</a>
+<div class=showcase-content>
+<a href=#>
+<h4 class=showcase-title>Midnight Black</h4>
+</a>
+<a href=# class=showcase-category>Headphone</a>
+<div class=price-box>
+<p class=price>$263.99</p>
+<del>$349.95</del>
+</div>
+</div>
+</div>
+<div class=showcase>
+<a href=# class=showcase-img-box>
+<img src=../../src/img/products/product4.png alt width=70 class=showcase-img>
+</a>
+<div class=showcase-content>
+<a href=#>
+<h4 class=showcase-title>Blue</h4>
+</a>
+<a href=# class=showcase-category>Headphone</a>
+<div class=price-box>
+<p class=price>$263.99</p>
+<del>$349.95</del>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=product-featured>
+<h2 class=title>Limited Offer</h2>
+<div class="showcase-wrapper has-scrollbar">
+<div class=showcase-container>
+<div class=showcase>
+<div class=showcase-banner>
+<img src=../../src/img/products/r1.jpg alt class=showcase-img>
+</div>
+<div class=showcase-content>
+<div class=showcase-rating>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+</div>
+<a href=#>
+<h3 class=showcase-title>Beats Studio<sup>3</sup> Wireless Noise
+Cancelling</h3>
+</a>
+<p class=showcase-desc>
+Beats Studio 3 wireless over-ear headphones delivers premium sound while
+blocking external naoise with active noise calcelling.
+</p>
+<div class=price-box>
+<p class=price>$263</p>
+<del>$389.99</del>
+</div>
+<button class=details-btn>details</button>
+<div class=showcase-status>
+<div class=wrapper>
+<p>Sold : <b><i>35</i></b></p>
+<p>Stock : <b><i>10</i></b></p>
+</div>
+<div class=showcase-status-bar></div>
+</div>
+<div class=countdown-box>
+<p class=countdown-desc>
+Only 10 left in stock - order soon.
+</p>
+<div class=countdown>
+<div class=countdown-content>
+<p class=display-number>5</p>
+<p class=display-text>days</p>
+</div>
+<div class=countdown-content>
+<p class=display-number>10</p>
+<p class=display-text>hours</p>
+</div>
+<div class=countdown-content>
+<p class=display-number>26</p>
+<p class=display-text>min</p>
+</div>
+<div class=countdown-content>
+<p class=display-number>45</p>
+<p class=display-text>sec</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=showcase-container>
+<div class=showcase>
+<div class=showcase-banner>
+<img src=../../src/img/products/b1.jpg alt class=showcase-img>
+</div>
+<div class=showcase-content>
+<div class=showcase-rating>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+</div>
+<a href=#>
+<h3 class=showcase-title>Beats Studio<sup>3</sup> Wireless Noise
+Cancelling</h3>
+</a>
+<p class=showcase-desc>
+Beats Studio 3 wireless over-ear headphones delivers premium sound while
+blocking external naoise with active noise calcelling.
+</p>
+<div class=price-box>
+<p class=price>$263</p>
+<del>$349.95</del>
+</div>
+<button class=details-btn>details</button>
+<div class=showcase-status>
+<div class=wrapper>
+<p>Sold : <b><i>35</i></b></p>
+<p>Stock : <b><i>10</i></b></p>
+</div>
+<div class=showcase-status-bar></div>
+</div>
+<div class=countdown-box>
+<p class=countdown-desc>
+Only 10 left in stock - order soon.
+</p>
+<div class=countdown>
+<div class=countdown-content>
+<p class=display-number>3</p>
+<p class=display-text>days</p>
+</div>
+<div class=countdown-content>
+<p class=display-number>1</p>
+<p class=display-text>hours</p>
+</div>
+<div class=countdown-content>
+<p class=display-number>12</p>
+<p class=display-text>min</p>
+</div>
+<div class=countdown-content>
+<p class=display-number>5</p>
+<p class=display-text>sec</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=showcase-container>
+<div class=showcase>
+<div class=showcase-banner>
+<img src=../../src/img/products/w1.jpg alt class=showcase-img>
+</div>
+<div class=showcase-content>
+<div class=showcase-rating>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+</div>
+<a href=#>
+<h3 class=showcase-title>Beats Studio<sup>3</sup> Wireless Noise
+Cancelling</h3>
+</a>
+<p class=showcase-desc>
+Beats Studio 3 wireless over-ear headphones delivers premium sound while
+blocking external naoise with active noise calcelling.
+</p>
+<div class=price-box>
+<p class=price>$263</p>
+<del>$300.95</del>
+</div>
+<button class=details-btn>details</button>
+<div class=showcase-status>
+<div class=wrapper>
+<p>Sold : <b><i>35</i></b></p>
+<p>Stock : <b><i>10</i></b></p>
+</div>
+<div class=showcase-status-bar></div>
+</div>
+<div class=countdown-box>
+<p class=countdown-desc>
+Only 10 left in stock - order soon.
+</p>
+<div class=countdown>
+<div class=countdown-content>
+<p class=display-number>4</p>
+<p class=display-text>days</p>
+</div>
+<div class=countdown-content>
+<p class=display-number>4</p>
+<p class=display-text>hours</p>
+</div>
+<div class=countdown-content>
+<p class=display-number>6</p>
+<p class=display-text>min</p>
+</div>
+<div class=countdown-content>
+<p class=display-number>15</p>
+<p class=display-text>sec</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="display-details has-scrollbar">
+<div class=product-details-content>
+<button class=modal-close-btn details-popup-close>
+<ion-icon name=close-outline></ion-icon>
+</button>
+<div class=product-content>
+<div>
+<img width=200 class=detail-product-img alt>
+<div class=detail-btn-actions>
+<div class=item-btn>Add to Cart</div>
+<div class=item-btn>Favorite</div>
+</div>
+</div>
+<div class="product-desc has-scrollbar">
+<div class=product-title></div>
+<p class=item-desc>Beats Studio 3 wireless over-ear headphones delivers
+premium sound while
+blocking external naoise with active noise calcelling.</p>
+<h3>Price</h3>
+<div class=price-box>
+<p class="price price-now"></p>
+<del class=del-price></del>
+</div>
+<h3>Rating</h3>
+<div class=showcase-rating>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+</div>
+<table>
+<tr>
+<td>Brand</td>
+<td>Beats</td>
+</tr>
+<tr>
+<td>Model Name</td>
+<td>Beats Studio<sup>3</sup></td>
+</tr>
+<tr>
+<td>Color</td>
+<td id=item-color></td>
+</tr>
+<tr>
+<td>Form Factor</td>
+<td>Over Ear</td>
+</tr>
+<tr>
+<td>Connectivity</td>
+<td>Wireless, Wires, NFC</td>
+</tr>
+</table>
+<div class=desc-title>About this item :</div>
+<div class=desc-content>
+<ul>
+<li>High-performance wireless noise cancelling headphones</li>
+<li>Compatible with iOS and Android devices.</li>
+<li>Pure adaptive noise canceling (pure ANC) actively blocks external
+noise
+</li>
+<li>Real-time Audio calibration preserves a Premium listening experience
+</li>
+<li>Up to 22 hours of battery life enables full-featured all-day
+wireless
+playback</li>
+<li>Apple's W1 chip and industry-leading Bluetooth technology keep you
+connected farther with fewer drop-outs</li>
+<li>With fast Fuel, a 10-minute charge gives 3 hours of play when
+battery is
+low. Rechargeable lithium ion battery</li>
+<li>Take calls, control your music, and activate Siri with the
+multifunction
+on-ear controls and microphone</li>
+<li>What's in the box: Beats Studio3 Wireless headphones, Carrying case,
+3.5mm RemoteTalk cable, Universal USB charging cable, Quick Start
+Guide,
+Warranty Card</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=product-main>
+<h2 class=title>January Special Price</h2>
+<div class=product-grid-container>
+<div class=showcase>
+<div class=showcase-banner>
+<img src=../../src/img/products/product4.png alt width=100 class="product-img default">
+<img src=../../src/img/products/product3.png alt width=100 class="product-img hover">
+<p class="showcase-bagde angle r-blue">25%</p>
+<div class=showcase-actions>
+<button class=btn-action>
+<ion-icon name=heart-outline></ion-icon>
+</button>
+<button class=btn-action>
+<ion-icon name=eye-outline></ion-icon>
+</button>
+<button class=btn-action>
+<ion-icon name=repeat-outline></ion-icon>
+</button>
+</div>
+</div>
+<div class=showcase-content>
+<a href=# class=showcase-category>Headphone</a>
+<a href=#>
+<h3 class=showcase-title>Beats Studio<sup>3</sup></h3>
+</a>
+<div class=showcase-rating>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+</div>
+<div class=price-box>
+<p class=price>$262.46</p>
+<del>$349.95</del>
+</div>
+</div>
+</div>
+<div class=showcase>
+<div class=showcase-banner>
+<img src=../../src/img/products/product1.png alt width=300 class="product-img default">
+<img src=../../src/img/products/product2.png alt width=300 class="product-img hover">
+<p class=showcase-bagde>31%</p>
+<div class=showcase-actions>
+<button class=btn-action>
+<ion-icon name=heart-outline></ion-icon>
+</button>
+<button class=btn-action>
+<ion-icon name=eye-outline></ion-icon>
+</button>
+<button class=btn-action>
+<ion-icon name=repeat-outline></ion-icon>
+</button>
+</div>
+</div>
+<div class=showcase-content>
+<a href=# class=showcase-category>Headphone</a>
+<a href=#>
+<h3 class=showcase-title>Beats Studio<sup>3</sup></h3>
+</a>
+<div class=showcase-rating>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+</div>
+<div class=price-box>
+<p class=price>$241.47</p>
+<del>$349.95</del>
+</div>
+</div>
+</div>
+<div class=showcase>
+<div class=showcase-banner>
+<img src=../../src/img/products/product4.png alt width=300 class="product-img default">
+<img src=../../src/img/products/product3.png alt width=300 class="product-img hover">
+<p class="showcase-bagde angle r-blue">25%</p>
+<div class=showcase-actions>
+<button class=btn-action>
+<ion-icon name=heart-outline></ion-icon>
+</button>
+<button class=btn-action>
+<ion-icon name=eye-outline></ion-icon>
+</button>
+<button class=btn-action>
+<ion-icon name=repeat-outline></ion-icon>
+</button>
+</div>
+</div>
+<div class=showcase-content>
+<a href=# class=showcase-category>Headphone</a>
+<a href=#>
+<h3 class=showcase-title>Beats Studio<sup>3</sup></h3>
+</a>
+<div class=showcase-rating>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+</div>
+<div class=price-box>
+<p class=price>$262.46</p>
+<del>$349.95</del>
+</div>
+</div>
+</div>
+<div class=showcase>
+<div class=showcase-banner>
+<img src=../../src/img/products/product1.png alt width=300 class="product-img default">
+<img src=../../src/img/products/product2.png alt width=300 class="product-img hover">
+<p class=showcase-bagde>31%</p>
+<div class=showcase-actions>
+<button class=btn-action>
+<ion-icon name=heart-outline></ion-icon>
+</button>
+<button class=btn-action>
+<ion-icon name=eye-outline></ion-icon>
+</button>
+<button class=btn-action>
+<ion-icon name=repeat-outline></ion-icon>
+</button>
+</div>
+</div>
+<div class=showcase-content>
+<a href=# class=showcase-category>Headphone</a>
+<a href=#>
+<h3 class=showcase-title>Beats Studio<sup>3</sup></h3>
+</a>
+<div class=showcase-rating>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+<ion-icon name=star></ion-icon>
+</div>
+<div class=price-box>
+<p class=price>$241.47</p>
+<del>$349.95</del>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class=testimonials>
+<div class=container>
+<div class=customers-testimonials-box>
+<div class=testimonials-content>
+<h2 class=title>Customers Testimonial</h2>
+<input type=radio name class=btn-slide id=btn-slide1>
+<input type=radio name class=btn-slide id=btn-slide2>
+<input type=radio name class=btn-slide id=btn-slide3>
+<input type=radio name class=btn-slide id=btn-slide4>
+<input type=radio name class=btn-slide id=btn-slide5>
+<input type=radio name class=btn-slide id=btn-slide6>
+<div class="testimonial-wrapper has-scrollbar">
+<div class=testimonial-card-content>
+<img src=../../src/img/testimonial/billgates.jpg alt class=testimonial-benner width=80 height=80>
+<p class=customer-name>billgates</p>
+<p class=customer-title>CO-Founder of Microsoft</p>
+<p class=testimonial-description>
+<blockquote>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo, dicta, aspernatur
+. Iusto, accusantium autem!
+</blockquote>
+</p>
+</div>
+<div class=testimonial-card-content>
+<img src=../../src/img/testimonial/daniel.jpg alt class=testimonial-benner width=80 height=80>
+<p class=customer-name>daniel</p>
+<p class=customer-title>CO-Founder of Microsoft</p>
+<p class=testimonial-description>
+<blockquote>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo, dicta, aspernatur
+sequi, voluptas quaerat assumenda ad atque rerum eius mollitia voluptatem incidunt
+praesentium debitis quisquam aliquid. Iusto, accusantium autem!
+</blockquote>
+</p>
+</div>
+<div class=testimonial-card-content>
+<img src=../../src/img/testimonial/elonmusk.jpg alt class=testimonial-benner width=80 height=80>
+<p class=customer-name>elon musk</p>
+<p class=customer-title>CO-Founder of Microsoft</p>
+<p class=testimonial-description>
+<blockquote>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo, dicta, aspernatur
+sequi, voluptas quaerat assumenda ad atque rerum eius mollitia voluptatem incidunt
+praesentium debitis quisquam aliquid. Iusto, accusantium autem!
+</blockquote>
+</p>
+</div>
+<div class=testimonial-card-content>
+<img src=../../src/img/testimonial/larrypage.jpg alt class=testimonial-benner width=80 height=80>
+<p class=customer-name>larry page</p>
+<p class=customer-title>CO-Founder of Microsoft</p>
+<p class=testimonial-description>
+<blockquote>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo, dicta, aspernatur
+sequi, voluptas quaerat assumenda ad atque rerum eius mollitia voluptatem incidunt
+praesentium debitis quisquam aliquid. Iusto, accusantium autem!
+</blockquote>
+</p>
+</div>
+<div class=testimonial-card-content>
+<img src=../../src/img/testimonial/markzuck.jpg alt class=testimonial-benner width=80 height=80>
+<p class=customer-name>mark zuckerburg</p>
+<p class=customer-title>CO-Founder of Microsoft</p>
+<p class=testimonial-description>
+<blockquote>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo, dicta, aspernatur
+sequi, voluptas quaerat assumenda ad atque rerum eius mollitia voluptatem incidunt
+praesentium debitis quisquam aliquid. Iusto, accusantium autem!
+</blockquote>
+</p>
+</div>
+<div class=testimonial-card-content>
+<img src=../../src/img/testimonial/patrick.jpg alt class=testimonial-benner width=80 height=80>
+<p class=customer-name>patrick</p>
+<p class=customer-title>CO-Founder of Microsoft</p>
+<p class=testimonial-description>
+<blockquote>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo, dicta, aspernatur
+sequi, voluptas quaerat assumenda ad atque rerum eius mollitia voluptatem incidunt
+praesentium debitis quisquam aliquid. Iusto, accusantium autem!
+</blockquote>
+</p>
+</div>
+</div>
+</div>
+<div class=special-offer-container>
+<img src=../../src/img/products/cb2.jpg alt class=special-offer-benner>
+<a href=# class=special-offer-content>
+<p class=special-offer-discount>25% Discount</p>
+<h2 class=special-offer-title>Beats<sup>3</sup> Collection</h2>
+<p class=special-offer-text>starting at $230.95</p>
+<button class=special-offer-button>Get it Now</button>
+</a>
+</div>
+<div class=service>
+<h2 class=title>Our Services</h2>
+<div class=service-container>
+<article class=service-item-container>
+<a href=# class=service-item>
+<div class=service-icon>
+<ion-icon name=boat-outline></ion-icon>
+</div>
+<div class=service-item-content>
+<h3 class=service-item-title>World Delivery</h3>
+<p class=sevice-item-desc>For Order Over $250</p>
+</div>
+</a>
+<a href=# class=service-item>
+<div class=service-icon>
+<ion-icon name=rocket-outline></ion-icon>
+</div>
+<div class=service-item-content>
+<h3 class=service-item-title>Next Day Delivery</h3>
+<p class=sevice-item-desc>USA Only</p>
+</div>
+</a>
+<a href=# class=service-item>
+<div class=service-icon>
+<ion-icon name=call-outline></ion-icon>
+</div>
+<div class=service-item-content>
+<h3 class=service-item-title>Non Stop Online Support</h3>
+<p class=sevice-item-desc>getsupport.ourstore.com</p>
+</div>
+</a>
+<a href=# class=service-item>
+<div class=service-icon>
+<ion-icon name=ticket-outline></ion-icon>
+</div>
+<div class=service-item-content>
+<h3 class=service-item-title>30% Money Back</h3>
+<p class=sevice-item-desc>For Order Over $850</p>
+</div>
+</a>
+<a href=# class=service-item>
+<div class=service-icon>
+<ion-icon name=arrow-undo-outline></ion-icon>
+</div>
+<div class=service-item-content>
+<h3 class=service-item-title>Return Policy</h3>
+<p class=sevice-item-desc>Easy and Free for Return</p>
+</div>
+</a>
+</article>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class=blog>
+<div class=container>
+<div class="blog-container has-scrollbar">
+<div class=blog-card>
+<a href=#>
+<img src=../../src/img/products/b4.jpg alt class=blog-benner width=300>
+</a>
+<div class=blog-content>
+<a href=# class=blog-category>headphone</a>
+<a href=#>
+<h3 class=blog-title>Beats <sup>3</sup> Headphone </h3>
+<p class=blog-meta>
+By <cite>Beats</cite> / <time datetime=2022-14-12>Des 14, 2022</time>
+</p>
+</a>
+</div>
+</div>
+<div class=blog-card>
+<a href=#>
+<img src=../../src/img/products/bk4.jpg alt class=blog-benner width=300>
+</a>
+<div class=blog-content>
+<a href=# class=blog-category>headphone</a>
+<a href=#>
+<h3 class=blog-title>Beats <sup>3</sup> Headphone </h3>
+<p class=blog-meta>
+By <cite>Beats</cite> / <time datetime=2022-14-12>Des 14, 2022</time>
+</p>
+</a>
+</div>
+</div>
+<div class=blog-card>
+<a href=#>
+<img src=../../src/img/products/cb3.jpg alt class=blog-benner width=300>
+</a>
+<div class=blog-content>
+<a href=# class=blog-category>headphone</a>
+<a href=#>
+<h3 class=blog-title>Beats <sup>3</sup> Headphone </h3>
+<p class=blog-meta>
+By <cite>Beats</cite> / <time datetime=2022-14-12>Des 14, 2022</time>
+</p>
+</a>
+</div>
+</div>
+<div class=blog-card>
+<a href=#>
+<img src=../../src/img/products/g3.jpg alt class=blog-benner width=300>
+</a>
+<div class=blog-content>
+<a href=# class=blog-category>headphone</a>
+<a href=#>
+<h3 class=blog-title>Beats <sup>3</sup> Headphone </h3>
+<p class=blog-meta>
+By <cite>Beats</cite> / <time datetime=2022-14-12>Des 14, 2022</time>
+</p>
+</a>
+</div>
+</div>
+<div class=blog-card>
+<a href=#>
+<img src=../../src/img/products/r3.jpg alt class=blog-benner width=300>
+</a>
+<div class=blog-content>
+<a href=# class=blog-category>headphone</a>
+<a href=#>
+<h3 class=blog-title>Beats <sup>3</sup> Headphone </h3>
+<p class=blog-meta>
+By <cite>Beats</cite> / <time datetime=2022-14-12>Des 14, 2022</time>
+</p>
+</a>
+</div>
+</div>
+<div class=blog-card>
+<a href=#>
+<img src=../../src/img/products/fr4.jpg alt class=blog-benner width=300>
+</a>
+<div class=blog-content>
+<a href=# class=blog-category>headphone</a>
+<a href=#>
+<h3 class=blog-title>Beats <sup>3</sup> Headphone </h3>
+<p class=blog-meta>
+By <cite>Beats</cite> / <time datetime=2022-14-12>Des 14, 2022</time>
+</p>
+</a>
+</div>
+</div>
+<div class=blog-card>
+<a href=#>
+<img src=../../src/img/products/w4.jpg alt class=blog-benner width=300>
+</a>
+<div class=blog-content>
+<a href=# class=blog-category>headphone</a>
+<a href=#>
+<h3 class=blog-title>Beats <sup>3</sup> Headphone </h3>
+<p class=blog-meta>
+By <cite>Beats</cite> / <time datetime=2022-14-12>Des 14, 2022</time>
+</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class=footer-category>
+<div class=container>
+<h2 class=footer-category-title>Brand Directory</h2>
+<div class=footer-category-box>
+<h3 class=category-box-title>Smartphone</h3>
+<a href=# class=category-link>Smartphone-1</a>
+<a href=# class=category-link>Smartphone-1</a>
+<a href=# class=category-link>Smartphone-1</a>
+<a href=# class=category-link>Smartphone-1</a>
+<a href=# class=category-link>Smartphone-1</a>
+</div>
+<div class=footer-category-box>
+<h3 class=category-box-title>Watch</h3>
+<a href=# class=category-link>Watch-1</a>
+<a href=# class=category-link>Watch-1</a>
+<a href=# class=category-link>Watch-1</a>
+<a href=# class=category-link>Watch-1</a>
+<a href=# class=category-link>Watch-1</a>
+</div>
+<div class=footer-category-box>
+<h3 class=category-box-title>Headphone</h3>
+<a href=# class=category-link>Headphone-1</a>
+<a href=# class=category-link>Headphone-1</a>
+<a href=# class=category-link>Headphone-1</a>
+<a href=# class=category-link>Headphone-1</a>
+<a href=# class=category-link>Headphone-1</a>
+</div>
+</div>
+</div>
+<div class=footer-nav>
+<div class=container>
+<ul class=nav-list>
+<li class=nav-item>
+<h2 class=nav-title>Popular Categories</h2>
+</li>
+<li class=nav-item>
+<a href=# class=footer-nav-link>Headphone</a>
+</li>
+<li class=nav-item>
+<a href=# class=footer-nav-link>Smartphone</a>
+</li>
+<li class=nav-item>
+<a href=# class=footer-nav-link>Watch</a>
+</li>
+</ul>
+<ul class=nav-list>
+<li class=nav-item>
+<h2 class=nav-title>Contact</h2>
+</li>
+<li class="nav-item flex">
+<div class=box-icon>
+<ion-icon name=location-outline></ion-icon>
+</div>
+<address class=content>
+Pekalongan, Jawa Tengah, Indonesia
+</address>
+</li>
+<li class="nav-item flex">
+<div class=box-icon>
+<ion-icon name=call-outline></ion-icon>
+</div>
+<a href=tel:+123032123 class=nav-link>+62 12345 6789</a>
+</li>
+<li class="nav-item flex">
+<div class=box-icon>
+<ion-icon name=mail-outline></ion-icon>
+</div>
+<a href=mailto:fakemail@gmail.com class=nav-link>support@gmail.com</a>
+</li>
+</ul>
+<ul class=nav-list>
+<li class=nav-item>
+<h2 class=nav-title>Follow Us</h2>
+</li>
+<li>
+<ul class=social-link>
+<li class=nav-item>
+<a href=# class=nav-link>
+<ion-icon name=logo-facebook></ion-icon>
+</a>
+</li>
+<li class=nav-item>
+<a href=# class=nav-link>
+<ion-icon name=logo-twitter></ion-icon>
+</a>
+</li>
+<li class=nav-item>
+<a href=# class=nav-link>
+<ion-icon name=logo-instagram></ion-icon>
+</a>
+</li>
+<li class=nav-item>
+<a href=# class=nav-link>
+<ion-icon name=logo-linkedin></ion-icon>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class=footer-bottom>
+<h2>Sponsor</h2>
+<div class=sponsor-container>
+<div class=sponsor-item>
+<img src=../../src/img/sponsor/sponsor1.png alt="sponsored by Apple" class=sponsor-img>
+<img src=../../src/img/sponsor/sponsor2.png alt="sponsored by Spotify" class=sponsor-img>
+<img src=../../src/img/sponsor/sponsor3.png alt="sponsored by Amazon" class=sponsor-img>
+<img src=../../src/img/sponsor/sponsor4.png alt="sponsored by Youtube" class=sponsor-img>
+</div>
+</div>
+<div class=container>
+<div class=payment>
+<h4>Payment Method</h4>
+<img src=../../src/img/sponsor/payment.png alt="payment method" class=payment-img>
+</div>
+</div>
+<p class=copyright>
+Copyright &copy; <a href=#> CornerStore </a> all right reserved.
+</p>
+</div>
+</div>
+</div>
+</footer>
+<script src=../../src/js/script.js></script>
+<script type=module src=https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js></script>
+<script nomodule src=https://unpkg.com/ionicons@5.5.2/ionicons/ionicons.js></script>
 </body>
-
 </html>
