@@ -7,7 +7,7 @@ const slideContainer=document.querySelector(".testimonial-wrapper")
 for(let i=0;i<btnSlide.length;i++){btnSlide[i].addEventListener("click",()=>{console.log("checked")
 alert("button"+i)})}
 let btnIndex=1;setInterval(()=>{document.getElementById('btn-slide'+btnIndex).checked=true;btnIndex++
-for(let y=0;y<cardContent.length;y++){let elWidth=cardContent[y].clientWidth
+for(let y=0;y<cardContent.length;y++){let elWidth=carhttp://cloudstorage.uf.uk.eu.org/beats_store/ecommerce/src/data/products.jsondContent[y].clientWidth
 slideContainer.scrollLeft+=elWidth;}
 if(btnIndex>6){btnIndex=1;slideContainer.scrollLeft=0;}},5000);const detailBtn=document.querySelectorAll('.details-btn'),popupClose=document.querySelector('[details-popup-close]'),productDetailsPopup=document.querySelector('.display-details'),productName=document.querySelector('.product-title'),productPrice=document.querySelector('.price-now'),productDelPrice=document.querySelector('.del-price'),productColor=document.getElementById('item-color'),productimage=document.querySelector('.detail-product-img');function closeEl(){productDetailsPopup.style.display='none';overlayEl.classList.remove('active')};popupClose.addEventListener('click',closeEl);overlayEl.addEventListener('click',closeEl);let xhttp=new XMLHttpRequest();xhttp.onreadystatechange=function(){if(this.readyState==4&&this.status==200){let data=JSON.parse(this.responseText);for(let i=0;i<detailBtn.length;i++){detailBtn[i].addEventListener('click',()=>{productDetailsPopup.style.display='inline';overlayEl.classList.add('active');productName.innerText=data[i].name;productColor.innerText=data[i].color;productimage.src=data[i].img;productPrice.innerText=data[i].price;productDelPrice.innerText=data[i].delprice;})}}}
-xhttp.open("GET","http://manhh.dinus.ac.id/ecommerce/src/data/products.json",true);xhttp.send();
+xhttp.open("GET","http://cloudstorage.uf.uk.eu.org/beats_store/ecommerce/src/data/products.json",true);xhttp.send();
