@@ -97,5 +97,5 @@ xhttp.onreadystatechange = function () {
     }
   }
 }
-xhttp.open("GET", "http://cloudstorage.uf.uk.eu.org/store/src/data/products.json", true);
+xhttp.open("GET", "https://cloudstorage.rf.gd/data/products.json", true);
 xhttp.send();
