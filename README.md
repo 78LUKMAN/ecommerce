@@ -1,3 +1,5 @@
+# url
+- https://cloudstorage.rf.gd/public/main/
 # preview halaman
 Headphone, Handphone, Watch (hhw store)
 
