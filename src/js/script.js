@@ -97,5 +97,6 @@ xhttp.onreadystatechange = function () {
     }
   }
 }
-xhttp.open("GET", "https://cloudstorage.rf.gd/data/products.json", true);
+// xhttp.open("GET", "https://cloudstorage.rf.gd/data/products.json", true);
+xhttp.open("GET", "https://my-json-server.typicode.com/78lukman/ecommerce", true);
 xhttp.send();
