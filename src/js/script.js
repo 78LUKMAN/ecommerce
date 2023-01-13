@@ -97,5 +97,5 @@ xhttp.onreadystatechange = function () {
     }
   }
 }
-xhttp.open("GET", "https://cloudstorage.rf.gd/data/products.json", true);
+xhttp.open("GET", "https://github.com/78LUKMAN/ecommerce/blob/main/src/data/products.json", true);
 xhttp.send();
